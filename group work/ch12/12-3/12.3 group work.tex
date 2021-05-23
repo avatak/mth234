@@ -7,6 +7,7 @@
 \usepackage{bm,tikz}
 \usepackage{multicol}
 \usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{calc}
 
 \newcommand{\course}{MTH 234 Summer 2021}
 \newcommand{\qdate}{The Dot Product} %PUT DATE HERE
@@ -119,8 +120,8 @@
           \begin{solution}
             Many vectors work. Since
             \[
-              \gen{-2,2,1}\cdot\gen{1,2,0}=2
-            \],
+              \gen{-2,2,1}\cdot\gen{1,2,0}=2,
+            \]
             if \(\bm{v}=\gen{x,y,z}\) 
             \[
               \ba\cdot\bm{v}=-2x+2y+z
@@ -128,6 +129,19 @@
             Any values for \(x,y,z\) that make \(-2x+2y+z=2\) give a vector that works. E.g. \(\gen{-1,0,0}\).
           \end{solution}
         \item Verify part (c) above by computing \(\ba\cdot(\bb+\bc)\) and \(\ba\cdot\bb+\ba\cdot\bc\) and showing they are the same.
+
+          \begin{solution}
+            \begin{align*}
+            \ba\cdot(\bb+\bc) & = \gen{-2,2,1}\cdot(\gen{1,2,0}+\gen{0,-1,-1})\\
+                            & = \gen{-2,2,1}\cdot\gen{1,1,-1}\\
+                            & = -2+2-1 = -1.
+            \end{align*}
+            \begin{align*}
+              \ba\cdot\bb+\ba\cdot\bc & = \gen{-2,2,1}\cdot\gen{1,2,0}+\gen{-2,2,1}\cdot\gen{0,-1,-1}\\
+              & = (-2+4+0)+(0-2-1)\\
+              & = 2-3 = -1
+            \end{align*}
+          \end{solution}
     \end{enumerate}
 \end{enumerate}
 
@@ -152,7 +166,7 @@
   \]
 \end{definition}
 
-Let \(\bm{a}=\langle6,4\rangle\) and \(\bm{b}=\langle(4,0)\rangle\), shown below
+Let \(\bm{a}=\langle6,4\rangle\) and \(\bm{b}=\langle4,0\rangle\), shown below
 
 \begin{center}
 \begin{tikzpicture}[scale=2]
@@ -169,13 +183,80 @@ Let \(\bm{a}=\langle6,4\rangle\) and \(\bm{b}=\langle(4,0)\rangle\), shown below
   \item Compute the following values and sketch them alongside the vectors \(\ba\) and \(\bb\) above
 \begin{enumerate}
     \item \(\mathrm{proj}_{\ba}(\bb)\) and \(\mathrm{orth}_{\ba}(\bb)\)
+
+      \begin{solution}
+        \begin{align*}
+            \mathrm{proj}_{\ba}(\bb) & = \left(\dfrac{\gen{6,4}\cdot\gen{4,0}}{\gen{6,4}\cdot\gen{6,4}}\right)\gen{6,4}\\
+            & = \dfrac{24+0}{36+16}\gen{6,4}\\
+            & = \frac{6}{13}\gen{6,4} = \gen{\frac{36}{13},\frac{24}{13}}\\
+            \mathrm{orth}_{\ba}(\bb) & = \bb-\mathrm{proj}_{\ba}(\bb)\\
+                & = \gen{4,0}-\gen{\frac{36}{13},\frac{24}{13}}\\
+                & = \gen{\frac{16}{13},-\frac{24}{13}}
+        \end{align*}
+
+        \begin{center}
+            \begin{tikzpicture}[scale=2]
+              \draw[thin,step=.5, gray!50] (-1,-1) grid (4,4);
+              \draw[->] (0,0) -- (3,2);
+                \node[right] at (3,2) {$\bm{a}$};
+              \draw[->] (0,0) -- (2,0);
+                \node[below] at (2,0) {$\bm{b}$};
+              \draw[->,very thick] (0,0)--(36/26,24/26) node[midway,anchor=south east] {$\mathrm{proj}_{\ba}(\bb)$};
+
+              \draw[->,very thick] (36/26,24/26) -- ($(36/26,24/26)+(16/26,-24/26)$) node[midway,anchor=south west] {$\mathrm{orth}_{\ba}(\bb)$};
+
+            \end{tikzpicture}
+            \end{center}
+      \end{solution}
+
     \item \(\mathrm{proj}_{\bb}(\ba)\) and \(\mathrm{orth}_{\bb}(\ba)\)
+
+        \begin{solution}
+            \begin{align*}          
+              \mathrm{proj}_{\bb}(\ba) & = \gen{6,0}
+              \mathrm{orth}_{\bb}(\ba) & = \gen{-2,0}
+            \end{align*}
+
+            \begin{center}
+            \begin{tikzpicture}[scale=2]
+              \draw[thin,step=.5, gray!50] (-1,-1) grid (4,4);
+              \draw[->] (0,0) -- (3,2);
+                \node[right] at (3,2) {$\bm{a}$};
+              \draw[->] (0,0) -- (2,0);
+                \node[below] at (2,0) {};
+
+              \draw[->,very thick] (0,0)--(3,0) node[midway,anchor=south] {$\mathrm{proj}_{\bb}(\ba)$};
+
+              \draw[->,very thick] (3,-.5) -- ($(3,-.5)+(-1,0)$) node[midway,anchor=north] {$\mathrm{orth}_{\bb}(\ba)$};
+
+            \end{tikzpicture}
+            \end{center}
+
+        \end{solution}
 \end{enumerate}
     \item What vector is equal to \(\mathrm{proj}_{\ba}(\bb)+\mathrm{orth}_{\ba}(\bb)\)?
+
+      \begin{solution}
+          \(\mathrm{proj}_{\ba}(\bb)+\mathrm{orth}_{\ba}(\bb)\) is always equal to \(\bb\).         
+      \end{solution}
+
+
+
     \item Let \(\ba=-5\bm{i}+5\bm{j}+2\bm{k}\) and \(\bb=-\bm{i}+8\bm{j}-\bm{k}\)
     \begin{enumerate}
         \item Compute \(\mathrm{proj_{\ba}(\bb)}\) 
+          \begin{solution}
+              Using \(\ba=\gen{-5,5,2}\) and \(\bb=\gen{-1,8,-1}\)
+              \[
+              \mathrm{proj_{\ba}(\bb)}=\left\{-\frac{215}{54},\frac{215}{54},\frac{43}{27}\right\}\approx \{-3.98148,3.98148,1.59259\}
+              \]
+          \end{solution}
         \item Compute \(\mathrm{orth_{\ba}(\bb)}\)
+        \begin{solution}
+              \[
+                \mathrm{orth_{\ba}(\bb)}=\left\{\frac{161}{54},\frac{217}{54},-\frac{70}{27}\right\}\approx \gen{2.98148, 4.01852, -2.59259}
+              \]
+              \end{solution}
     \end{enumerate}
 \end{enumerate}
 

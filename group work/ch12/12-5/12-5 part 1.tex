@@ -1,0 +1,259 @@
+\documentclass[12pt]{exam}
+    \usepackage[top=1in, bottom=1in, left=.45in, right=.45in]{geometry}
+    \usepackage{amsmath,amsthm,amssymb,amstext}
+    \usepackage{enumerate,enumitem}
+    \usepackage{tikz,float,graphicx}
+    \usepackage{microtype}
+    \usepackage{bm,tikz}
+        \usetikzlibrary{calc}
+    \usepackage{multicol}
+    \usepackage{nicematrix}
+    \usepackage{cleveref}
+    \usepackage[framemethod=tikz]{mdframed}
+    
+    \newcommand{\course}{MTH 234 Summer 2021}
+    \newcommand{\qdate}{Equations of lines and planes} %PUT DATE HERE
+    \newcommand{\quiz}{Group Work} 
+    
+    \newcommand{\R}{\mathbb{R}}
+    
+    \newcommand{\ba}{\bm{a}}
+    \newcommand{\bb}{\bm{b}}
+    \newcommand{\bc}{\bm{c}}
+    \newcommand{\bi}{\bm{i}}
+    \newcommand{\bj}{\bm{j}}
+    \newcommand{\bk}{\bm{k}}
+    \newcommand{\br}{\bm{r}}
+    \newcommand{\bv}{\bm{v}}
+    \newcommand{\gen}[1]{\left\langle #1 \right\rangle}
+
+\newtheorem*{theorem}{Theorem}
+\surroundwithmdframed[]{theorem}
+
+\theoremstyle{definition}
+    \newtheorem*{definition}{Definition}
+    \surroundwithmdframed[]{definition}
+    \newtheorem*{info}{Useful Information}
+    \surroundwithmdframed[]{info}
+\theoremstyle{remark}
+    \newtheorem*{remark}{Remark}
+    \surroundwithmdframed[]{remark}
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER AND FOOTER
+%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+\firstpageheadrule
+\runningheadrule
+\firstpageheader{\course}{\quiz}{\qdate}
+\runningheader{\course}{\quiz}{\qdate}
+\runningfooter{}{}{}
+
+
+\usepackage{color}
+\shadedsolutions
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+\printanswers
+%\noprintanswers
+
+
+\begin{document}
+\section*{12.5 Part 1: Lines}
+
+A note about notation:
+\begin{center}
+If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector 
+    \(
+        \bm{p}=\gen{x_0,y_0,z_0}.
+    \)
+    \end{center}
+\begin{info}
+\phantom{.}
+    \begin{itemize}
+            \item The \textbf{line through a point \(P\) parallel to \(\bv\)} is given by
+            \begin{equation}
+                \br(t)=\bm{p}+t\bv,\quad t\in \R \label{eqn:point_vector}
+            \end{equation}
+            \item The \textbf{line segment} beginning at a point \(R_0\) and ending at the point \(R_1\) is given by
+            \begin{align}
+                \br(t) & = (1-t)\br_0+t\br_1\quad t\in\R\\
+                \text{or equivalently}\quad \br(t) & =\br_0+t(\br_1-\br_0)\quad t\in \R\label{eqn:twopoints_alt}
+            \end{align}
+            % Note that \Cref{eqn:twopoints_alt} is just \Cref{eqn:point_vector} with \(\bv\) equal to the vector \(\br_1-\br_0\).
+            \item A \textbf{parametric equation} for a line is of the form
+            \[
+                \br{t}=\gen{at+x_0,bt+y_0,ct+z_0}
+            \]
+            and if \(a,b,c\ne 0\) a \textbf{symmetric equation\footnote[1]{
+            This comes from $\gen{x,y,z}=\gen{at+x_0,bt+y_0,ct+z_0}$ and solving each component for \(t\), e.g. $x=at+x_0,\ldots$}
+            } is given by 
+            \[
+                \dfrac{x-x_0}{a}=\dfrac{y-y_0}{b}=\dfrac{z-z_0}{c}
+            \]
+
+    \end{itemize}
+        
+\end{info}
+
+\begin{questions}
+
+\question Find an equation for the line segment \(\br(t)\) with \(\br(0)=(3,-7,0)\) and \(\br(1)=(18,-7,\pi)\), \(0\le t \le 1\).
+
+\ifprintanswers
+        \begin{solution}
+            \begin{align*}
+                \br(t) & = \gen{3,-7,0}+t(\gen{18,-7,\pi}-\gen{3,-7,0})\\
+                    & = \gen{3,-7,0}+t(\gen{15,0,\pi})\\
+                    & = \gen{3+15t,-7,\pi t}
+            \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi    
+
+\question Let \(\bm{f}(t)=\gen{1+2t,-10t,2200111-7t}\). Let \(L\) be a line parallel to \(\bm{f}(t)\) that passes through the point \((0,0,0)\). 
+\begin{parts}
+    \part Find a parametric equation for \(L\).
+
+    \ifprintanswers
+        \begin{solution}
+            From 
+            \begin{align*}
+                \bm{f}(t) & = \gen{1+2t,-10t,2200111-7t}\\
+                    & = \gen{1,0,2200111}+t\gen{2,-10,-7}
+            \end{align*}
+            We see that \(L\) is a line through \((0,0,0)\) and parallel to the vector \(\gen{2,-10,-7}\) and is given by
+            \begin{align*}
+                \br(t) & = \gen{0,0,0}+t\gen{2,-10,-7}\\
+                    & = \gen{2t,-10t,-7t}.
+            \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+    \part Use the result above to find a symmetric equation for \(L\).
+
+    \ifprintanswers
+        \begin{solution}
+            \begin{align*}
+                x = 2t & \iff \frac{x}{2}=t\\
+                y = -10t & \iff \frac{-y}{10}=t\\
+                z = -7t & \iff \frac{-z}{7}=t
+            \end{align*}
+            Which gives 
+            \[
+                \frac{x}{2} = \frac{y}{-10}=\frac{z}{-7}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\end{parts}
+
+\question Suppose \(L\) is represented by the equation \(\br_1(t)=\gen{2t,1-t,2\pi+\pi t}\). Determine which of the following points belong to \(L\)
+\begin{parts}
+\part \(P(-4,3,0)\)
+    \ifprintanswers
+        \begin{solution}
+            If \(P\) is in \(L\) then when \(x=-4\) we have 
+            \[
+                -4=2t \quad\iff\quad t=-2.
+            \]
+            When \(t=-2\) the line \(L\) passes through the point 
+            \[
+                (2(-2),1-(-2),2\pi+(-2)\pi) = (-4,3,0).
+            \]
+        Which means the line \(L\) passes through \(P\).
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\part \(Q(1,1/2,5\pi)\)
+    \ifprintanswers
+        \begin{solution}
+            \(Q\) is not a point on \(L\)
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\part \(R(20,-9,12\pi)\)
+    \ifprintanswers
+        \begin{solution}
+            The line \(L\) passes through \(R\) when \(t=10\).
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+\end{parts}
+
+
+\question Let \(L\) denote the line with symmetric equation
+\[
+    \dfrac{x-1}{2}=y=\dfrac{z+1}{3}
+\]
+\begin{parts}
+
+\part Find a parametric equation representing \(L\).
+    \ifprintanswers
+        \begin{solution}
+            We have 
+            \begin{gather*}
+                t=\dfrac{x-1}{2} \iff x=2t+1\\
+                t=y\\
+                t=\dfrac{z+1}{3} \iff z=3t-1
+            \end{gather*}
+            which gives the parametric equation
+            \[\br(t)=\gen{2t+1,t,3t-1}\]
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\part Determine if the line that passes through the points \((1,-5,5)\) and \((-1,0,2)\) intersects \(L\). If not, determine if it is parallel or skew to \(L\).
+    
+    \ifprintanswers
+        \begin{solution}
+            The line through \((1,-5,5)\) and \((-1,0,2)\) is given by
+            \begin{align*}
+                \bm{s}(t) & = \gen{-1,0,2} + t*\left(\gen{1,-5,5}-\gen{-1,0,2}\right)\\
+                    & = \gen{-1,0,2}+t\gen{2,-5,3}\\
+                    & = \gen{2t-1,-5t,3t+2}.
+            \end{align*}
+            The lines do not intersect (assume \(2t+1=2t-1\) and it follows).
+            From 
+            \begin{align*}
+                \br(t) & = \gen{\phantom{-}1,0,-1} +  t \gen{2,\phantom{-}1,3}\\
+                \bm{s}(t) & = \gen{-1,0,\phantom{-}2} + t \gen{2,-5,3}
+            \end{align*}
+            We see the lines are not parallel since 
+            \[
+                \frac{2}{2}\ne \frac{1}{-5} \ne \frac{3}{3}
+            \]
+            which means the lines are skew.
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\end{parts}
+
+
+\end{questions}
+
+
+\end{document}
+
+
+%\question Sample question
+%
+%\ifprintanswers
+%        \begin{solution}
+%        \end{solution}
+%    \else
+%        \vfill
+%    \fi 

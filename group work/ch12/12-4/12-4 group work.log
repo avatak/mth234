@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  19 MAY 2021 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  21 MAY 2021 08:14
 entering extended mode
-**"./12.3 group work.tex"
-(12.3 group work.tex
+**"./12-4 group work.tex"
+(12-4 group work.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-07>
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/exam\exam.cls
@@ -606,6 +606,10 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\multicol.st
 y
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
@@ -677,7 +681,88 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \colbreak@box=\box109
 \mc@col@check@num=\count344
 )
-(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/nicematrix\nicematrix.s
+ty
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-05-07 L3 programming layer (loader) 
+
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count345
+\l__pdf_internal_box=\box110
+))
+Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
+)
+Package: nicematrix 2021/05/06 v5.15a Enhanced arrays with the help of PGF/TikZ
+
+
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e-2020-10-01.sty
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e-generic.tex)))
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen278
+\ar@mcellbox=\box111
+\extrarowheight=\dimen279
+\NC@list=\toks50
+\extratabsurround=\skip84
+\backup@length=\skip85
+\ar@cellbox=\box112
+)
+\g__nicematrix_env_int=\count346
+\g__nicematrix_NiceMatrixBlock_int=\count347
+\l__nicematrix_columns_width_dim=\dimen280
+\g__nicematrix_row_total_int=\count348
+\g__nicematrix_col_total_int=\count349
+\g__nicematrix_blocks_wd_dim=\dimen281
+\g__nicematrix_blocks_ht_dim=\dimen282
+\g__nicematrix_blocks_dp_dim=\dimen283
+\l__nicematrix_tabular_width_dim=\dimen284
+\l__nicematrix_old_iRow_int=\count350
+\l__nicematrix_old_jCol_int=\count351
+\l__nicematrix_x_initial_dim=\dimen285
+\l__nicematrix_y_initial_dim=\dimen286
+\l__nicematrix_x_final_dim=\dimen287
+\l__nicematrix_y_final_dim=\dimen288
+\l_tmpc_dim=\dimen289
+\l_tmpd_dim=\dimen290
+\g__nicematrix_width_last_col_dim=\dimen291
+\g__nicematrix_width_first_col_dim=\dimen292
+\l__nicematrix_row_min_int=\count352
+\l__nicematrix_row_max_int=\count353
+\l__nicematrix_col_min_int=\count354
+\l__nicematrix_col_max_int=\count355
+\g__nicematrix_static_num_of_col_int=\count356
+\l__nicematrix_rounded_corners_dim=\dimen293
+\l__nicematrix_line_width_dim=\dimen294
+\g__nicematrix_block_box_int=\count357
+\l__nicematrix_submatrix_extra_height_dim=\dimen295
+\l__nicematrix_submatrix_left_xshift_dim=\dimen296
+\l__nicematrix_submatrix_right_xshift_dim=\dimen297
+\l__nicematrix_first_row_int=\count358
+\l__nicematrix_first_col_int=\count359
+\l__nicematrix_last_row_int=\count360
+\l__nicematrix_last_col_int=\count361
+\c@tabularnote=\count362
+\l__nicematrix_number_of_notes_int=\count363
+\l__nicematrix_cell_space_top_limit_dim=\dimen298
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen299
+\l__nicematrix_inter_dots_dim=\dimen300
+\l__nicematrix_xdots_shorten_dim=\dimen301
+\l__nicematrix_radius_dim=\dimen302
+\l__nicematrix_notes_above_space_dim=\dimen303
+\l__nicematrix_left_margin_dim=\dimen304
+\l__nicematrix_right_margin_dim=\dimen305
+\l__nicematrix_extra_left_margin_dim=\dimen306
+\l__nicematrix_extra_right_margin_dim=\dimen307
+\c__nicematrix_max_l_dim=\dimen308
+) (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
@@ -689,24 +774,9 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-05-07 L3 programming layer (loader) 
-
-(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count345
-\l__pdf_internal_box=\box110
-))
-(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e-2020-10-01.sty
-(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e-generic.tex)))
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count346
+\etb@tempcnta=\count364
 )
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
@@ -743,117 +813,117 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\c@abspage=\count347
+\c@abspage=\count365
 Package zref Info: New property: abspage on input line 66.
 )
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip84
-\c@mdf@globalstyle@cnt=\count348
-\mdf@skipabove@length=\skip85
-\mdf@skipbelow@length=\skip86
-\mdf@leftmargin@length=\skip87
-\mdf@rightmargin@length=\skip88
-\mdf@innerleftmargin@length=\skip89
-\mdf@innerrightmargin@length=\skip90
-\mdf@innertopmargin@length=\skip91
-\mdf@innerbottommargin@length=\skip92
-\mdf@splittopskip@length=\skip93
-\mdf@splitbottomskip@length=\skip94
-\mdf@outermargin@length=\skip95
-\mdf@innermargin@length=\skip96
-\mdf@linewidth@length=\skip97
-\mdf@innerlinewidth@length=\skip98
-\mdf@middlelinewidth@length=\skip99
-\mdf@outerlinewidth@length=\skip100
-\mdf@roundcorner@length=\skip101
-\mdf@footenotedistance@length=\skip102
-\mdf@userdefinedwidth@length=\skip103
-\mdf@needspace@length=\skip104
-\mdf@frametitleaboveskip@length=\skip105
-\mdf@frametitlebelowskip@length=\skip106
-\mdf@frametitlerulewidth@length=\skip107
-\mdf@frametitleleftmargin@length=\skip108
-\mdf@frametitlerightmargin@length=\skip109
-\mdf@shadowsize@length=\skip110
-\mdf@extratopheight@length=\skip111
-\mdf@subtitleabovelinewidth@length=\skip112
-\mdf@subtitlebelowlinewidth@length=\skip113
-\mdf@subtitleaboveskip@length=\skip114
-\mdf@subtitlebelowskip@length=\skip115
-\mdf@subtitleinneraboveskip@length=\skip116
-\mdf@subtitleinnerbelowskip@length=\skip117
-\mdf@subsubtitleabovelinewidth@length=\skip118
-\mdf@subsubtitlebelowlinewidth@length=\skip119
-\mdf@subsubtitleaboveskip@length=\skip120
-\mdf@subsubtitlebelowskip@length=\skip121
-\mdf@subsubtitleinneraboveskip@length=\skip122
-\mdf@subsubtitleinnerbelowskip@length=\skip123
+\mdf@templength=\skip86
+\c@mdf@globalstyle@cnt=\count366
+\mdf@skipabove@length=\skip87
+\mdf@skipbelow@length=\skip88
+\mdf@leftmargin@length=\skip89
+\mdf@rightmargin@length=\skip90
+\mdf@innerleftmargin@length=\skip91
+\mdf@innerrightmargin@length=\skip92
+\mdf@innertopmargin@length=\skip93
+\mdf@innerbottommargin@length=\skip94
+\mdf@splittopskip@length=\skip95
+\mdf@splitbottomskip@length=\skip96
+\mdf@outermargin@length=\skip97
+\mdf@innermargin@length=\skip98
+\mdf@linewidth@length=\skip99
+\mdf@innerlinewidth@length=\skip100
+\mdf@middlelinewidth@length=\skip101
+\mdf@outerlinewidth@length=\skip102
+\mdf@roundcorner@length=\skip103
+\mdf@footenotedistance@length=\skip104
+\mdf@userdefinedwidth@length=\skip105
+\mdf@needspace@length=\skip106
+\mdf@frametitleaboveskip@length=\skip107
+\mdf@frametitlebelowskip@length=\skip108
+\mdf@frametitlerulewidth@length=\skip109
+\mdf@frametitleleftmargin@length=\skip110
+\mdf@frametitlerightmargin@length=\skip111
+\mdf@shadowsize@length=\skip112
+\mdf@extratopheight@length=\skip113
+\mdf@subtitleabovelinewidth@length=\skip114
+\mdf@subtitlebelowlinewidth@length=\skip115
+\mdf@subtitleaboveskip@length=\skip116
+\mdf@subtitlebelowskip@length=\skip117
+\mdf@subtitleinneraboveskip@length=\skip118
+\mdf@subtitleinnerbelowskip@length=\skip119
+\mdf@subsubtitleabovelinewidth@length=\skip120
+\mdf@subsubtitlebelowlinewidth@length=\skip121
+\mdf@subsubtitleaboveskip@length=\skip122
+\mdf@subsubtitlebelowskip@length=\skip123
+\mdf@subsubtitleinneraboveskip@length=\skip124
+\mdf@subsubtitleinnerbelowskip@length=\skip125
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
-\mdf@frametitlebox=\box111
-\mdf@footnotebox=\box112
-\mdf@splitbox@one=\box113
-\mdf@splitbox@two=\box114
-\mdf@splitbox@save=\box115
-\mdfsplitboxwidth=\skip124
-\mdfsplitboxtotalwidth=\skip125
-\mdfsplitboxheight=\skip126
-\mdfsplitboxdepth=\skip127
-\mdfsplitboxtotalheight=\skip128
-\mdfframetitleboxwidth=\skip129
-\mdfframetitleboxtotalwidth=\skip130
-\mdfframetitleboxheight=\skip131
-\mdfframetitleboxdepth=\skip132
-\mdfframetitleboxtotalheight=\skip133
-\mdffootnoteboxwidth=\skip134
-\mdffootnoteboxtotalwidth=\skip135
-\mdffootnoteboxheight=\skip136
-\mdffootnoteboxdepth=\skip137
-\mdffootnoteboxtotalheight=\skip138
-\mdftotallinewidth=\skip139
-\mdfboundingboxwidth=\skip140
-\mdfboundingboxtotalwidth=\skip141
-\mdfboundingboxheight=\skip142
-\mdfboundingboxdepth=\skip143
-\mdfboundingboxtotalheight=\skip144
-\mdf@freevspace@length=\skip145
-\mdf@horizontalwidthofbox@length=\skip146
-\mdf@verticalmarginwhole@length=\skip147
-\mdf@horizontalspaceofbox=\skip148
-\mdfsubtitleheight=\skip149
-\mdfsubsubtitleheight=\skip150
-\c@mdfcountframes=\count349
+\mdf@frametitlebox=\box113
+\mdf@footnotebox=\box114
+\mdf@splitbox@one=\box115
+\mdf@splitbox@two=\box116
+\mdf@splitbox@save=\box117
+\mdfsplitboxwidth=\skip126
+\mdfsplitboxtotalwidth=\skip127
+\mdfsplitboxheight=\skip128
+\mdfsplitboxdepth=\skip129
+\mdfsplitboxtotalheight=\skip130
+\mdfframetitleboxwidth=\skip131
+\mdfframetitleboxtotalwidth=\skip132
+\mdfframetitleboxheight=\skip133
+\mdfframetitleboxdepth=\skip134
+\mdfframetitleboxtotalheight=\skip135
+\mdffootnoteboxwidth=\skip136
+\mdffootnoteboxtotalwidth=\skip137
+\mdffootnoteboxheight=\skip138
+\mdffootnoteboxdepth=\skip139
+\mdffootnoteboxtotalheight=\skip140
+\mdftotallinewidth=\skip141
+\mdfboundingboxwidth=\skip142
+\mdfboundingboxtotalwidth=\skip143
+\mdfboundingboxheight=\skip144
+\mdfboundingboxdepth=\skip145
+\mdfboundingboxtotalheight=\skip146
+\mdf@freevspace@length=\skip147
+\mdf@horizontalwidthofbox@length=\skip148
+\mdf@verticalmarginwhole@length=\skip149
+\mdf@horizontalspaceofbox=\skip150
+\mdfsubtitleheight=\skip151
+\mdfsubsubtitleheight=\skip152
+\c@mdfcountframes=\count367
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count350
-\c@mdf@env@i=\count351
-\c@mdf@env@ii=\count352
-\c@mdf@zref@counter=\count353
+\mdf@envdepth=\count368
+\c@mdf@env@i=\count369
+\c@mdf@env@ii=\count370
+\c@mdf@zref@counter=\count371
 Package zref Info: New property: mdf@pagevalue on input line 895.
-) (12.3 group work.aux)
-\openout1 = `"12.3 group work.aux"'.
+) (12-4 group work.aux)
+\openout1 = `"12-4 group work.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -893,17 +963,17 @@ LaTeX Font Info:    ... okay on input line 46.
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen278
-\scratchbox=\box116
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen279
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count372
+\scratchdimen=\dimen309
+\scratchbox=\box118
+\nofMPsegments=\count373
+\nofMParguments=\count374
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count375
+\MPscratchDim=\dimen310
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
+\everyMPtoPDFconversion=\toks52
 )
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -915,14 +985,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 46.
+LaTeX Info: Redefining \microtypecontext on input line 50.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 46.
+LaTeX Info: Redefining \showhyphens on input line 50.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -931,10 +1001,14 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
+\c@tabularnotesi=\count378
+\enitdp@tabularnotes=\count379
+\c@tabularnotes*i=\count380
+\enitdp@tabularnotes*=\count381
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 58.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+(mdframed)              on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
 
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -943,7 +1017,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
 
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -952,45 +1026,74 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+\g__nicematrix_max_cell_width_dim=\dimen311
+\l__nicematrix_cell_box=\box119
+\c@iRow=\count382
+\c@jCol=\count383
+\l__nicematrix_the_array_box=\box120
+\l__nicematrix_left_delim_dim=\dimen312
+\l__nicematrix_right_delim_dim=\dimen313
+\g__nicematrix_dp_row_zero_dim=\dimen314
+\g__nicematrix_ht_row_zero_dim=\dimen315
+\g__nicematrix_ht_row_one_dim=\dimen316
+\g__nicematrix_dp_ante_last_row_dim=\dimen317
+\g__nicematrix_ht_last_row_dim=\dimen318
+\g__nicematrix_dp_last_row_dim=\dimen319
+\g__nicematrix_ddots_int=\count384
+\g__nicematrix_iddots_int=\count385
+\g__nicematrix_delta_x_one_dim=\dimen320
+\g__nicematrix_delta_y_one_dim=\dimen321
+\g__nicematrix_delta_x_two_dim=\dimen322
+\g__nicematrix_delta_y_two_dim=\dimen323
+\l__nicematrix_initial_i_int=\count386
+\l__nicematrix_initial_j_int=\count387
+\l__nicematrix_final_i_int=\count388
+\l__nicematrix_final_j_int=\count389
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 68.
+(mdframed)              on input line 81.
 
 [1{C:/Users/shult/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ] [2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 139.
+(mdframed)              on input line 174.
+Package mdframed Info: Not enough space on this page on input line 180.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 182.
  [3]
-[4]
-This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
-(12.3 group work.aux) ) 
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 254.
+Package mdframed Info: Not enough space on this page on input line 256.
+
+[4] [5]
+This exam contains 7 questions with 9 parts, 0 subparts, and 0 subsubparts.
+(12-4 group work.aux) ) 
 Here is how much of TeX's memory you used:
- 18442 strings out of 479173
- 353673 string characters out of 2854167
- 698064 words of memory out of 3000000
- 35657 multiletter control sequences out of 15000+600000
- 413931 words of font info for 81 fonts, out of 8000000 for 9000
+ 21758 strings out of 479173
+ 443230 string characters out of 2854167
+ 805363 words of memory out of 3000000
+ 38964 multiletter control sequences out of 15000+600000
+ 413062 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,10n,104p,461b,921s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\shult\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\tcrm1200.pk><C:/Users/shult/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/shult/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/shult/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/sh
-ult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C
-:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra
-/cmmib8.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/shult/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/shult/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "12.3 group work.pdf" (4 pages, 125864 bytes).
+ 100i,21n,104p,461b,1008s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/shult/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/shult/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/shult/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/U
+sers/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb>
+Output written on "12-4 group work.pdf" (5 pages, 111901 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 22541 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 18445 words of extra memory for PDF output out of 20736 (max. 10000000)
 
