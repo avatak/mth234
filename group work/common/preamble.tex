@@ -1,0 +1,55 @@
+    \usepackage[top=1in, bottom=1in, left=.45in, right=.45in]{geometry}
+    \usepackage{amsmath,amsthm,amssymb,amstext}
+    \usepackage{enumerate,enumitem}
+    \usepackage{tikz,float,graphicx}
+    \usepackage{microtype}
+    \usepackage{bm,tikz}
+        \usetikzlibrary{calc}
+    \usepackage{multicol}
+    \usepackage{nicematrix}
+    \usepackage{cleveref}
+    \usepackage[framemethod=tikz]{mdframed}
+    
+    %\newcommand{\course}{MTH 234 Summer 2021}
+    %\newcommand{\qdate}{Equations of lines and planes} %PUT DATE HERE
+    %\newcommand{\quiz}{Group Work} 
+    
+    \newcommand{\R}{\mathbb{R}}
+    
+    \newcommand{\ba}{\bm{a}}
+    \newcommand{\bb}{\bm{b}}
+    \newcommand{\bc}{\bm{c}}
+    \newcommand{\bi}{\bm{i}}
+    \newcommand{\bj}{\bm{j}}
+    \newcommand{\bk}{\bm{k}}
+    \newcommand{\br}{\bm{r}}
+    \newcommand{\bv}{\bm{v}}
+    \newcommand{\gen}[1]{\left\langle #1 \right\rangle}
+
+\newtheorem*{theorem}{Theorem}
+\surroundwithmdframed[]{theorem}
+
+\theoremstyle{definition}
+    \newtheorem*{definition}{Definition}
+    \surroundwithmdframed[]{definition}
+    \newtheorem*{info}{Useful Information}
+    \surroundwithmdframed[]{info}
+\theoremstyle{remark}
+    \newtheorem*{remark}{Remark}
+    \surroundwithmdframed[]{remark}
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER AND FOOTER
+%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+\firstpageheadrule
+\runningheadrule
+\firstpageheader{\course}{\quiz}{\qdate}
+\runningheader{\course}{\quiz}{\qdate}
+\runningfooter{}{}{}
+
+
+\usepackage{color}
+\shadedsolutions
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}

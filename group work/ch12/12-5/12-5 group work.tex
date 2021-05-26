@@ -54,9 +54,8 @@
 \usepackage{color}
 \shadedsolutions
 \definecolor{SolutionColor}{rgb}{0.8,0.9,1}
-%\printanswers
-\noprintanswers
-
+\printanswers
+%\noprintanswers
 
 \begin{document}
 \section*{12.5 Part 1: Lines}
@@ -118,6 +117,16 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
     \ifprintanswers
         \begin{solution}
+            From 
+            \begin{align*}
+                \bm{f}(t) & = \gen{1+2t,-10t,2200111-7t}\\
+                    & = \gen{1,0,2200111}+t\gen{2,-10,-7}
+            \end{align*}
+            We see that \(L\) is a line through \((0,0,0)\) and parallel to the vector \(\gen{2,-10,-7}\) and is given by
+            \begin{align*}
+                \br(t) & = \gen{0,0,0}+t\gen{2,-10,-7}\\
+                    & = \gen{2t,-10t,-7t}.
+            \end{align*}
         \end{solution}
     \else
         \vfill
@@ -127,6 +136,15 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
     \ifprintanswers
         \begin{solution}
+            \begin{align*}
+                x = 2t & \iff \frac{x}{2}=t\\
+                y = -10t & \iff \frac{-y}{10}=t\\
+                z = -7t & \iff \frac{-z}{7}=t
+            \end{align*}
+            Which gives 
+            \[
+                \frac{x}{2} = \frac{y}{-10}=\frac{z}{-7}
+            \]
         \end{solution}
     \else
         \vfill
@@ -134,13 +152,20 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
 \end{parts}
 
-\newpage 
-
 \question Suppose \(L\) is represented by the equation \(\br_1(t)=\gen{2t,1-t,2\pi+\pi t}\). Determine which of the following points belong to \(L\)
 \begin{parts}
 \part \(P(-4,3,0)\)
     \ifprintanswers
         \begin{solution}
+            If \(P\) is in \(L\) then when \(x=-4\) we have 
+            \[
+                -4=2t \quad\iff\quad t=-2.
+            \]
+            When \(t=-2\) the line \(L\) passes through the point 
+            \[
+                (2(-2),1-(-2),2\pi+(-2)\pi) = (-4,3,0).
+            \]
+        Which means the line \(L\) passes through \(P\).
         \end{solution}
     \else
         \vfill
@@ -149,14 +174,16 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 \part \(Q(1,1/2,5\pi)\)
     \ifprintanswers
         \begin{solution}
+            \(Q\) is not a point on \(L\)
         \end{solution}
     \else
         \vfill
     \fi 
 
-\part \(Q(20,-9,12\pi)\)
+\part \(R(20,-9,12\pi)\)
     \ifprintanswers
         \begin{solution}
+            The line \(L\) passes through \(R\) when \(t=10\).
         \end{solution}
     \else
         \vfill
@@ -190,12 +217,31 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
     
     \ifprintanswers
         \begin{solution}
+            The line through \((1,-5,5)\) and \((-1,0,2)\) is given by
+            \begin{align*}
+                \bm{s}(t) & = \gen{-1,0,2} + t*\left(\gen{1,-5,5}-\gen{-1,0,2}\right)\\
+                    & = \gen{-1,0,2}+t\gen{2,-5,3}\\
+                    & = \gen{2t-1,-5t,3t+2}.
+            \end{align*}
+            The lines do not intersect (assume \(2t+1=2t-1\) and it follows).
+            From 
+            \begin{align*}
+                \br(t) & = \gen{\phantom{-}1,0,-1} +  t \gen{2,\phantom{-}1,3}\\
+                \bm{s}(t) & = \gen{-1,0,\phantom{-}2} + t \gen{2,-5,3}
+            \end{align*}
+            We see the lines are not parallel since 
+            \[
+                \frac{2}{2}\ne \frac{1}{-5} \ne \frac{3}{3}
+            \]
+            which means the lines are skew.
         \end{solution}
     \else
         \vfill
     \fi 
 
 \end{parts}
+
+
 
 \newpage
 
@@ -220,6 +266,32 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
 \ifprintanswers
         \begin{solution}
+            Since \(P\) is not on \(\br(t)\) we can use it to create another line not parallel to \(\br(t)\) and contained in the plane.
+
+            When \(t=0\), \(\br(0)=\gen{0,0,0}\), so the plane contains a line segment connecting \((0,0,0)\) to \((0,0,1)\) which is parallel to the vector
+            \(\gen{0,0,1}\).
+
+            Then a normal vector is 
+            \begin{align*}
+            \gen{0,0,1}\times\gen{1,-1,2} & = 
+                \left|
+                    \begin{NiceMatrix}
+                    \bi & \bj & \bk\\
+                      0 & 0 & 1\\
+                1 & -1 & 2 
+                \end{NiceMatrix}\right| \\
+                & = \gen{0-(-1),-(0-1),0-0}\\
+                & = \gen{1,1,0}.
+            \end{align*}
+
+From \[
+    ||\gen{1,1,0}|| = \sqrt{2},
+\]
+a unit normal vector to the plane is  
+\[
+    \gen{\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0} \quad (\gen{-\frac{1}{\sqrt{2}},-\frac{1}{\sqrt{2}},0}~~\text{is also correct}).
+\]
+
         \end{solution}
     \else
         \vfill
@@ -229,6 +301,13 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
 \ifprintanswers
         \begin{solution}
+
+            Use vectors \(PQ\) and \(PR\) to find a normal vector to the plane \(PQ\times PR=\gen{2,-5,5}\).
+            So the plane is given by
+            \[
+                0 = \gen{2,-5,5}\cdot\left(\gen{x,y,z}-\gen{0,0,0}\right) \quad \iff \quad 0 = 2x-5y+5z.
+            \]
+
         \end{solution}
     \else
         \vfill
@@ -238,6 +317,12 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
 \ifprintanswers
         \begin{solution}
+
+            The vector \(\eta=\gen{5,-1,-1}\) is normal to \(5x-y-z=6\) so an equation for a parallel plane through \((1,-1,-1)\) is 
+            \[
+                0 = \gen{5,-1,-1}\cdot(\gen{x-1,y+1,z+1} \quad \iff \quad 5x-y-z=7
+            \]
+
         \end{solution}
     \else
         \vfill
@@ -247,6 +332,20 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
 
 \ifprintanswers
         \begin{solution}
+            The line is represented by the equation
+            \[
+                \br(t)=\gen{1,0,1}+t\gen{4-1,-2-0,2-1} \quad\iff\quad \br(t) = \gen{3t+1,-2t,t+1}
+            \]
+            We want to find the value of t for which \(\br(t)\) gives a point tthat satisfies \(x+y+z=6\).
+
+            This implies that 
+            \[
+                (3t+1)+(-2t)+(t+1) = 6\quad \Rightarrow\quad t=2 
+            \]
+            Which means the line intersects the plane at the point
+            \[
+                \br(2)=(7,-4,3).
+            \]
         \end{solution}
     \else
         \vfill
@@ -259,6 +358,15 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
     \part Find the angle between the two planes (hint: think about normal vectors)
     \ifprintanswers
         \begin{solution}
+            The given planes have normal vectors \(\eta_1=\gen{1,1,1}\) and \(\eta_2=\gen{1,-2,3}\). The angle between these two vectors
+            will give the angle between the planes:
+                \[
+                    \cos\theta = \frac{\gen{1,1,1}\cdot\gen{1,-2,3}}{|\gen{1,1,1}||\gen{1,-2,3}|} = \frac{2}{\sqrt{42}}
+                \]
+                so the angle is
+                \[
+                    \theta = \cos^{-1}\left(\dfrac{2}{\sqrt{42}}\right)\approx 1.257~~\text{radians}
+                \]
         \end{solution}
     \else
         \vfill
@@ -267,6 +375,23 @@ If \(P(x_0,y_0,z_0)\) is a point then \(\bm{p}\) will denote the vector
     \part Find the parametric equation representing the line determined by the intersection of the two planes (hint: think about normal vectors again)
     \ifprintanswers
         \begin{solution}
+            We can find a vector parallel to the line of intersection by computing \(\eta_1\times\eta_2\) (as they were defined above).
+
+            \begin{align*}
+                \bv & = 
+                    \left|
+                    \begin{NiceMatrix}
+                        \bi & \bj & \bk \\
+                        1 & 1 & 1 \\
+                        1 & -2 & 3 
+                    \end{NiceMatrix}
+                    \right|\\
+                    & = \gen{5,-2,-3}
+            \end{align*}
+            A point that lies on both planes is \((1,0,0)\) so the line of intersection can be represented by 
+            \[
+                \br(t) = \gen{1,0,0} + t \gen{5,-2,-3} = \gen{5t+1,-2t,-3t}
+            \]
         \end{solution}
     \else
         \vfill
@@ -282,6 +407,7 @@ Find the equation for the plane that intersects \(\mathcal{P}\) and is parallel 
 
 \ifprintanswers
         \begin{solution}
+            Please ignore this question. I did not type it up correctly so it doesn't really make sense.
         \end{solution}
     \else
         \vfill
@@ -294,6 +420,7 @@ Find the equation for the plane that intersects \(\mathcal{P}\) and is parallel 
         \part Find a point \(Q\) on the plane \(3x+2y+6z=5\) (the choice of point does not matter, you just need to choose one).
     \ifprintanswers
         \begin{solution}
+        The easiest way to make 5 out of 3,2, and 6 is \(3(1)+2(1)+6(0)\), so I will choose \(Q=(1,1,0)\).
         \end{solution}
     \else
         \vfill
@@ -302,6 +429,10 @@ Find the equation for the plane that intersects \(\mathcal{P}\) and is parallel 
     \part Find the vector \(PQ\) using the points above.
     \ifprintanswers
         \begin{solution}
+            \begin{align*}
+                PQ & = \gen{1,1,0}-\gen{1,-2,4}\\
+                    & = \gen{0,3,-4}
+            \end{align*}
         \end{solution}
     \else
         \vfill
@@ -311,9 +442,12 @@ Find the equation for the plane that intersects \(\mathcal{P}\) and is parallel 
     Unless you were very lucky, the vector \(PQ\) is not the shortest vector connecting \(P\) to the plane. To find the shortest distance possible, we project \(PQ\) onto the normal vector for the plane.
 \end{remark}
 
-    \part Find the normal vector \(\bm{n}\) for the plane.
+    \part Find the normal vector \(\bm{\eta}\) for the plane.
     \ifprintanswers
         \begin{solution}
+            \[
+                \bm{\eta}=\gen{3,2,6}
+            \]
         \end{solution}
     \else
         \vfill
@@ -322,6 +456,17 @@ Find the equation for the plane that intersects \(\mathcal{P}\) and is parallel 
     \part Find \(||\mathrm{proj}_{\bm{n}}(PQ)||\). This is the distance between \(P\) and the plane. See the image below.
     \ifprintanswers
         \begin{solution}
+            First we find 
+                \begin{align*}
+                    \mathrm{proj}_{\bm{n}}(PQ) & = \left(\dfrac{\eta\cdot PQ}{\eta\cdot \eta}\right)\eta\\ 
+                        & = \left(\dfrac{3(0)+2(3)+6(-4)}{3^2+2^2+6^2}\right)\gen{3,2,6}\\
+                        & = \left(\dfrac{-18}{49}\right)\gen{3,2,6}
+                \end{align*}
+                So the distance is given by 
+                \begin{align*}
+                    \left|\mathrm{proj}_{\bm{n}}(PQ)\right| & = \left|\dfrac{18}{49}\right|\left|\gen{3,2,6}\right|\\
+                        & = \frac{18}{49}\sqrt{9+4+36} = \frac{18}{7}~~\text{units}
+                \end{align*}
         \end{solution}
     \else
         \vfill
