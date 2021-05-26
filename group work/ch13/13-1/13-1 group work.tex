@@ -5,23 +5,203 @@
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
+\newcommand{\bif}{\quad\iff\quad}
 
-\printanswers
-%\noprintanswers
+%\printanswers
+\noprintanswers
 
 \begin{document}
 
 \section*{\qdate}
 
+
+\subsection*{Parameterizing curves in \(\R^2\)}
+
 \begin{questions}
 
-\question 
+\question Sketch \(\br(t)=\gen{t,t^2}\) in  \(\R^2\) and express the curve as a function of  \(x\) and \(y\). 
+        \ifprintanswers
+            \begin{solution}
+                Let \(x=t\). Then 
+                \[
+                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
+                \]
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+\question Sketch \(\br(t)=\gen{4,\cos(t),\sin(t)}\) in \(\R^3\) and express the curve as a function of \(x\), \(y\), and \(z\).
+        \ifprintanswers
+            \begin{solution}
+                Let \(x=t\). Then 
+                \[
+                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
+                \]
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+\begin{definition}
+    A vector function \(\br(t)\) is \emph{continuous} at \(t=a\) if 
+        \[
+            \lim_{t\to a} \br(t) = \br(a)
+        \]
+\end{definition}
+
+    Note that by the above definition to check \(\br(t)\) is continuous at \(t=a\) you need to verify that \(\br(a)\) and \(\lim_{t\to a}\br(t)\) are both defined and equal to each other.
+
+
+\question Show that \(\br(t)=\gen{\sin(\pi t)+1,t^2+t,1}\) is continuous at \(t=-1\).
+        \ifprintanswers
+            \begin{solution}
+                Let \(x=t\). Then 
+                \[
+                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
+                \]
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+\newpage
+
+\subsection*{Parameterizing curves in \(\R^2\)}
+
+\question Find a vector function \(\br(t)\), \(t\in \R\) that represents the curve 
+ \(
+    x+y^2 = 4
+ \) shown below.
+
+\begin{center}
+ \begin{tikzpicture}
+    \begin{axis}[xmin=-5,xmax=5,ymin=-5,ymax=5]
+        \addplot[blue,thick,mark=none,domain=-4:4 ,samples=50] ({4-x^2},{x});
+    \end{axis}
+ \end{tikzpicture}
+ \end{center}
+
+ 
+ \begin{parts}
+
+    \part Try parametezing the curve by setting \(x=t\) and explain what makes that approach difficult (there is not one correct answer)..
+        \ifprintanswers
+            \begin{solution}
+                Let \(x=t\). Then 
+                \[
+                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
+                \]
+            \end{solution}
+        \else
+            \vfill
+        \fi
+    \part Now try parameterizing by setting \(y=t\).
+        \ifprintanswers
+            \begin{solution}
+                Let \(y=t\). Then 
+                \[
+                    x+t^2=4 \quad\iff\quad x=4-t^2
+                \]
+                and we have the vector equation
+                \[
+                    \br(t)=\gen{4-t^2,t}
+                \]
+            \end{solution}
+        \else
+            \vfill
+        \fi
+    \part Verify the vector function you found satisfies \(x+y^2=4\) for any arbitrary choice of \(t\).
+        \ifprintanswers
+            \begin{solution}
+            \begin{align*}
+                x + y^2 & = 4\\
+                (4-t^2)+(t^2) & = 4\\
+                4 & = 4
+            \end{align*}
+            \end{solution}
+        \else
+            \vfill
+        \fi
+    
+
+    \part What would you do differently for the curve \(x^2+y=4?\)
     \ifprintanswers
-        \begin{solution}
-        \end{solution}
-    \else
-        \vfill
-    \fi
+            \begin{solution}
+
+            \end{solution}
+        \else
+            \vfill
+        \fi
+    \end{parts}
+
+
+\newpage
+
+\question Find a vector function \(\br(t)\) that represents the curve \(x^2+16y^2=4\)
+\begin{center}
+ \begin{tikzpicture}
+    \begin{axis}[xmin=-3,xmax=3,ymin=-2,ymax=2]
+        \addplot[variable=t,blue,thick,domain=0:360 ,samples=50] ({2*cos(t)},{(1/2)*sin(t)});
+    \end{axis}
+ \end{tikzpicture}
+ \end{center}
+\begin{parts}
+    \part Try parameterizing by setting \(x=t\) and then try setting \(y=t\). What makes these so difficult to work with?
+    \ifprintanswers
+            \begin{solution}
+
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+    \part Rewrite the above equation so that it has the form 
+    \[
+        (f(x))^2+(g(y))^2=1
+    \]
+
+    \ifprintanswers
+            \begin{solution}
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+    \part Find \(\br(t)\) by setting \(f(x)=\cos t\) and \(g(y)=\sin t\). Be sure to include the domain for \(t\).
+        \ifprintanswers
+            \begin{solution}
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+    \part What do you need to change to represent the portion of \(x^2+36y^2=4\) where \(y\ge 0\)? What about \(x> 0\)?
+    \ifprintanswers
+            \begin{solution}
+
+            \end{solution}
+        \else
+            \vfill
+        \fi    
+\end{parts}
+
+\newpage
+
+\subsection*{Parameterizing curves in \(\R^3\)}
+
+\question Find a vector function that represents the curve of intersection between the two surfaces 
+\[
+    y=4z^2+x^2 \quad\text{and}\quad x=z^2
+\]
+Hint: Try \(x=t\), \(y=t\), and \(z=t\) and see which gives you something you can work with.
+    \ifprintanswers
+            \begin{solution}
+
+            \end{solution}
+        \else
+            \vfill
+        \fi
 \end{questions}
 
 \end{document}

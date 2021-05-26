@@ -1,0 +1,38 @@
+\documentclass{article}
+    \usepackage[top=1in, bottom=1in, left=.45in, right=.45in]{geometry}
+    \usepackage{amsmath,amsthm,amssymb,amstext}
+    \usepackage{enumerate,enumitem}
+    \usepackage{tikz,float,graphicx}
+        \usetikzlibrary{calc}
+    \usepackage{microtype}
+    \usepackage{bm}
+        
+    \usepackage{multicol}
+    \usepackage{nicematrix}
+    \usepackage{cleveref}
+    \usepackage[framemethod=tikz]{mdframed}
+    
+    \usepackage{pgfplots}
+    \pgfplotsset{every axis/.append style={
+                    axis x line=middle,    % put the x axis in the middle
+                    axis y line=middle,    % put the y axis in the middle
+                    axis line style={<->}, % arrows on the axis
+                    xlabel={$x$},          % default put x on x-axis
+                    ylabel={$y$},          % default put y on y-axis
+                    grid=both,
+                    %xtick={-4,...,-1,1,...,3},
+                    %ytick={-1,1,}
+    }}
+    \pgfplotsset{compat=1.17}
+
+\begin{document}
+
+\section{2d plots}
+
+\begin{tikzpicture}
+    \begin{axis}[xmin=-5,xmax=5,ymin=-5,ymax=5]
+        \addplot[thick,mark=none,domain=-4:4 ,samples=50] ({4-x^2},{x});
+    \end{axis}
+\end{tikzpicture}
+
+\end{document}
