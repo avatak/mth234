@@ -7,8 +7,8 @@
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
 
-%\printanswers
-\noprintanswers
+\printanswers
+%\noprintanswers
 
 \begin{document}
 
@@ -128,7 +128,7 @@
     \part What would you do differently for the curve \(x^2+y=4?\)
     \ifprintanswers
             \begin{solution}
-
+                Almost nothing. The roles of \(x\) and \(y\) are exchanged in the parameterization, i.e. set \(x=t\) etc.
             \end{solution}
         \else
             \vfill
@@ -150,7 +150,7 @@
     \part Try parameterizing by setting \(x=t\) and then try setting \(y=t\). What makes these so difficult to work with?
     \ifprintanswers
             \begin{solution}
-
+                If we set \(x=t\), then \(t^2+16y^2=4\) gives \(y=\pm\frac{\sqrt{4-t^2}}{4}\) which is not ideal. Setting \(y=t\) is similar.
             \end{solution}
         \else
             \vfill
@@ -163,6 +163,10 @@
 
     \ifprintanswers
             \begin{solution}
+                Divide by 4:
+                \[
+                    \frac{x^2}{4}+4y^2=1 \bif \left(\frac{x}{2}\right)^2+(2y)^2=1
+                \]
             \end{solution}
         \else
             \vfill
@@ -171,6 +175,14 @@
     \part Find \(\br(t)\) by setting \(f(x)=\cos t\) and \(g(y)=\sin t\). Be sure to include the domain for \(t\).
         \ifprintanswers
             \begin{solution}
+                From 
+                \[
+                    \frac{x}{2}=\cos(t) \quad\text{and}\quad 2y=\sin(t)
+                \]
+                we get the parameterization
+                \[
+                    \br(t) = \gen{2\cos(t),\frac{1}{2}\sin(t)}, \quad 0\le t\le 2\pi
+                \]
             \end{solution}
         \else
             \vfill
@@ -179,7 +191,8 @@
     \part What do you need to change to represent the portion of \(x^2+36y^2=4\) where \(y\ge 0\)? What about \(x> 0\)?
     \ifprintanswers
             \begin{solution}
-
+                There are multiple correct ways to adjust this. One example: since \(y\ge 0\) corresponds to the upper half of the ellipse, we can simply restrict the domain of \(t\) to \(0\le t\le \pi\).
+                For \(x>0\), we can use \(-\pi/2 < t <\pi/2\)
             \end{solution}
         \else
             \vfill
@@ -195,9 +208,15 @@
     y=4z^2+x^2 \quad\text{and}\quad x=z^2
 \]
 Hint: Try \(x=t\), \(y=t\), and \(z=t\) and see which gives you something you can work with.
+
     \ifprintanswers
             \begin{solution}
-
+                \begin{align*}
+                    x=t:\quad & \Rightarrow ~ z=\pm \sqrt{x}\ldots\\
+                    y=t:\quad & \Rightarrow ~ t=4z^2+x^2\ldots\\
+                    z=t:\quad & \Rightarrow ~ x=t^2~~\Rightarrow~~y=4t^2+t^4
+                \end{align*}
+            
             \end{solution}
         \else
             \vfill
