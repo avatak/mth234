@@ -1,0 +1,91 @@
+\documentclass[12pt]{exam}
+
+\newcommand{\course}{MTH 234 Summer 2021}
+\newcommand{\qdate}{14.1 Group work } %PUT DATE HERE
+\newcommand{\quiz}{Group Work} 
+
+\input{../../common/preamble.tex}
+\newcommand{\bif}{\quad\iff\quad}
+
+%\printanswers
+\noprintanswers
+
+\begin{document}
+
+\section*{\qdate}
+
+
+\subsection*{14.1: Functions of multiple variables}
+
+\begin{questions}
+
+\question Find and sketch the domain of \(f(x,y)=\dfrac{\sqrt{9-x^2-y^2}}{\sqrt{x^2+y^2-4}}\)
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Let \(f(x,y)=\sqrt{x^2+y^2}.\)
+\begin{parts} 
+\part What is the domain of \(f(x,y)\)?
+    \ifprintanswers
+        \begin{solution}
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{axis}[xmin=-5,xmax=5,ymin=-5,ymax=5]
+                    \addplot [dashed,<->] coordinates {(-4.5,4.5) (4.5,-4.5)};
+                    \addplot [dashed,<->] coordinates {(-4.5,-4.5) (4.5,4.5)};
+                \end{axis}
+                \begin{scope}[shift={(8,0)}]
+                \begin{axis}[xmin=-5,xmax=5,ymin=-5,ymax=5]                    
+                    \addplot [dashed,fill=gray!50, fill opacity=0.5] coordinates 
+                        {(-4.5,4.5) (0,0) (-4.5,-4.5) (-4.5,4.5)};
+                    \addplot [dashed,fill=gray!50, fill opacity=0.5] coordinates {(4.5,-4.5) (4.5,4.5) (0,0) (4.5,-4.5)};
+                    \addplot [<->] coordinates {(-4.5,4.5) (4.5,-4.5)};
+                    \addplot [<->] coordinates {(-4.5,-4.5) (4.5,4.5)};                    
+                \end{axis}
+                \end{scope}
+            \end{tikzpicture}            
+        \end{center}
+
+        \end{solution}
+    \else
+        \vspace{1cm}
+    \fi
+\part Sketch a contour plot for \(f(x,y)\) using level curves \(f(x,y)=k\) for 
+\(k=0,1,2,3,4,5\).
+
+\ifprintanswers
+        \begin{solution}
+             \begin{tikzpicture}
+            \begin{axis}[xmin=-6,xmax=6,ymin=-6,ymax=6,width=.6\textwidth,xtick distance=1,ytick distance=1]
+                \coordinate (center) (0,0);
+            \end{axis}
+        \end{tikzpicture}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part Use the above to sketch \(f(x,y)\). Illustrate the curves cooresponding to curves drawn in the contour plot above.
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+
+
+\end{questions}
+
+\end{document}
+
+%soln : Question environment
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi

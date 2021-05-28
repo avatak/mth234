@@ -211,12 +211,21 @@ Hint: Try \(x=t\), \(y=t\), and \(z=t\) and see which gives you something you ca
 
     \ifprintanswers
             \begin{solution}
-                \begin{align*}
-                    x=t:\quad & \Rightarrow ~ z=\pm \sqrt{x}\ldots\\
-                    y=t:\quad & \Rightarrow ~ t=4z^2+x^2\ldots\\
-                    z=t:\quad & \Rightarrow ~ x=t^2~~\Rightarrow~~y=4t^2+t^4
+            We need to find a way to describe all points \((x,y,z)\) that satisfy both \(y=4z^2+x^2\) and \(x=z^2\). The second equation is a little simpler so we will start there
+                 \begin{align*}
+                    x=t:\quad & \Rightarrow ~ z(t)=\pm \sqrt{x}\ldots\\
+                    z=t:\quad & \Rightarrow ~ x(t)=t^2
                 \end{align*}
-            
+            Note that if you try \(y=t\) the equation becomes too complicated.
+
+            Using the above we can also find an equation for \(y(t)=4t^2+t^4\).
+
+            So the intersection is described by 
+            \[
+                x(t)=t^2,~~ \quad y(t)=4t^2+t^4,~~ \quad z(t)=t \hfill
+            \]
+            You can verify this by plugging in \(x(t),y(t),z(t)\) into the equations above.
+
             \end{solution}
         \else
             \vfill

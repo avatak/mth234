@@ -1,0 +1,83 @@
+\documentclass[12pt]{exam}
+
+\newcommand{\course}{MTH 234 Summer 2021}
+\newcommand{\qdate}{14.3 Group work } %PUT DATE HERE
+\newcommand{\quiz}{Group Work} 
+
+\input{../../common/preamble.tex}
+\newcommand{\bif}{\quad\iff\quad}
+
+%\printanswers
+\noprintanswers
+
+\begin{document}
+
+\section*{\qdate}
+
+
+\subsection*{14.3: Functions of multiple variables}
+
+\begin{questions}
+
+\question Find \(f_{xx}(x,y)\), \(f_{xy}(x,y)\), and \(f_{yy}(x,y)\)
+    \begin{parts}
+        \part \(f(x,y)=\dfrac{2x+x^2}{y}\)
+            \ifprintanswers
+                \begin{solution}
+                \end{solution}
+            \else
+                \vfill
+            \fi
+
+        \part \(f(x,y)=\ln(x)\sin(\pi y)\)
+            \ifprintanswers
+                \begin{solution}
+                \end{solution}
+            \else
+                \vfill
+            \fi
+
+        \end{parts}
+
+    \question Find all first order partial derivatives of the function \(h(x,y,z,t)=x^2y\cos(z/t)\)
+            \ifprintanswers
+                \begin{solution}
+                \end{solution}
+            \else
+                \vfill
+            \fi
+
+\newpage
+
+    \question Verify Clairaut's theorem for \(f(x,y)=(2x+3y^2)^{10}\)
+        \ifprintanswers
+                \begin{solution}
+                \end{solution}
+            \else
+                \vfill
+            \fi
+
+    \question Consider the surface 
+    \[
+        \frac{x^2}{4}+2y^2-z^2=1
+    \]
+
+    Use implicit differentiation to express both \(\frac{\partial z}{\partial x}\) and \(\frac{\partial z}{\partial y}\) as functions of \(x\) and \(y\).
+    \ifprintanswers
+                \begin{solution}
+                \end{solution}
+            \else
+                \vfill
+            \fi
+
+\end{questions}
+
+\end{document}
+
+%soln : Question environment
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
