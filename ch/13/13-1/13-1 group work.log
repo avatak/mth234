@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  27 MAY 2021 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  28 MAY 2021 11:33
 entering extended mode
 **"./13-1 group work.tex"
 (13-1 group work.tex
@@ -1148,24 +1148,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 46.
-
 [1{C:/Users/shult/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-] [2] [3]
-[4]
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 60.
+Package mdframed Info: Not enough space on this page on input line 65.
+ [2] [3]
+[4] [5]
 This exam contains 6 questions with 8 parts, 0 subparts, and 0 subsubparts.
 (13-1 group work.aux) ) 
 Here is how much of TeX's memory you used:
- 32244 strings out of 479173
- 799457 string characters out of 2854167
+ 32273 strings out of 479173
+ 799840 string characters out of 2854167
  1257741 words of memory out of 3000000
- 49273 multiletter control sequences out of 15000+600000
- 419347 words of font info for 115 fonts, out of 8000000 for 9000
+ 49294 multiletter control sequences out of 15000+600000
+ 419554 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,10n,107p,793b,2140s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,10n,107p,793b,2325s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/shult/AppData/Local/Programs
@@ -1181,9 +1182,9 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/shult/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/shult/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "13-1 group work.pdf" (4 pages, 134710 bytes).
+Output written on "13-1 group work.pdf" (5 pages, 138398 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  30733 words of extra memory for PDF output out of 35830 (max. 10000000)
 

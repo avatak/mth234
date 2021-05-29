@@ -22,10 +22,13 @@
 \question Sketch \(\br(t)=\gen{t,t^2}\) in  \(\R^2\) and express the curve as a function of  \(x\) and \(y\). 
         \ifprintanswers
             \begin{solution}
-                Let \(x=t\). Then 
-                \[
-                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
-                \]
+                If \(x=t\) then \(y=t^2=x^2\). The curve is described by \(y=x^2\).
+
+                \begin{tikzpicture}
+                    \begin{axis}[xmin=-3,xmax=3,ymin=-1,ymax=9]
+                        \addplot[->,domain=-2.5:2.5] ({\x},{(\x)^2}) node[anchor=south east] {$\br(t)$};
+                    \end{axis}
+                \end{tikzpicture}
             \end{solution}
         \else
             \vfill
@@ -34,14 +37,25 @@
 \question Sketch \(\br(t)=\gen{4,\cos(t),\sin(t)}\) in \(\R^3\) and express the curve as a function of \(x\), \(y\), and \(z\).
         \ifprintanswers
             \begin{solution}
-                Let \(x=t\). Then 
-                \[
-                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
-                \]
+                Setting \(y=\cos(t)\) and \(z=\sin(t)\) corresponds to a circle of radius 1 in the \(yz\)-plane. In \(\R^3\) this is a cylinder extending infinitely parallel to the \(x\)-axis. By placing the restriction \(x=4\) we get the previously mentioned circle shifted 4 units in the positive x direction.
+                
+                In particular, \(x=4\) and \(y^2+z^2=1\).
+
+                \begin{center}
+                \begin{tikzpicture}
+                    \draw[->] (0,0)--(0,3) node[anchor=west] {$z$};
+                    \draw[->] (0,0)--(3,0) node[anchor=west] {$y$};
+                    \draw[->] (0,0)--({4*cos(225)},{4*sin(225)}) node[anchor=south east] {$x$};
+                    \draw ($ ({2*cos(225)},{2*sin(225)}) + (0,.1) $) -- ($ ({2*cos(225)},{2*sin(225)}) + (0,-.1) $) node[below] {$4$};
+                    \draw[blue] ({2*cos(225)},{2*sin(225)}) circle[radius=1];
+                \end{tikzpicture}
+                \end{center}
             \end{solution}
         \else
             \vfill
         \fi
+
+\newpage 
 
 \begin{definition}
     A vector function \(\br(t)\) is \emph{continuous} at \(t=a\) if 
@@ -56,16 +70,11 @@
 \question Show that \(\br(t)=\gen{\sin(\pi t)+1,t^2+t,1}\) is continuous at \(t=-1\).
         \ifprintanswers
             \begin{solution}
-                Let \(x=t\). Then 
-                \[
-                    t+y^2 = 4 \bif y^2 = 4-t \bif y=\pm\sqrt{4-t}\ldots
-                \]
+                \(\br(t)\) is clearly defined when \(t=-1\) with \(\lim_{t->-1}\br(t)=(1,2,1)=\br(-1)\)
             \end{solution}
         \else
             \vfill
         \fi
-
-\newpage
 
 \subsection*{Parameterizing curves in \(\R^2\)}
 
