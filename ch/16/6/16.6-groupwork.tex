@@ -1,0 +1,141 @@
+\documentclass[12pt]{exam}
+
+\newcommand{\course}{MTH 234 Summer 2021}
+\newcommand{\qdate}{16.6} %PUT DATE HERE
+\newcommand{\quiz}{Group Work} 
+
+\input{../../common/preamble.tex}
+\newcommand{\bif}{\quad\iff\quad}
+\newcommand{\LR}[1]{\left( #1 \right)}
+
+\printanswers
+%\noprintanswers
+
+\begin{document}
+
+\section*{\qdate}
+
+
+\subsection*{More parameterization of surfaces}
+
+\begin{questions}
+
+\question Let \(\br(u,v)=\gen{u+v,u-v,u^2-v^2}\)
+\begin{parts}
+    \part Evaulate \(\br(2,-1)\) and \(\br(-1,2)\).
+        \ifprintanswers
+            \begin{solution}
+                \begin{align*}
+                    \br(2,-1) & = (2-1,2-(-1),2^2-(-1)^2)\\
+                        & = (1,3,3)\\
+                    \br(-1,2) & = (-1+2,-1-2,(-1)^2-2^2)\\
+                        & = (1,-3,-3)
+                \end{align*}
+            \end{solution}
+        \else
+            \vfill
+        \fi
+    \part Find \(u,v\) so that \(\br(u,v)=(3,-1,-3)\).
+        \ifprintanswers
+            \begin{solution}
+                If \(u+v=3\) then \(v=3-u\). Then
+                \[
+                    u-v=-1 \bif u-(3-u)=-1 \bif 2u=2\bif u=1
+                \]
+                Which implies \(v=3-1=2\).
+                To verify \(u=1,v=2\) is correct,
+                \[
+                    \br(1,2)=(1+2,1-2,(1)^2-(2)^2)=(3,-1,-3).
+                \]
+            \end{solution}
+        \else
+            \vfill
+        \fi
+        
+
+
+    \part Show that \((0,0,1)\) is not a point on the surface.
+        \ifprintanswers
+            \begin{solution}
+                Since \(u-v=0\), \(u=v\). Then \(u+v=0\) gives \(u+u=0\) which means \(u=0=v\).
+                But \(\br(0,0)=(0,0,0)\ne (0,0,1)\).
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+    % \(\br(u,v)=\gen{u+v,u-v,u^2-v^2}\)
+    \part Recall that a surface \(\br(u,v)\) is \emph{smooth} if \(\br_u\) and \(\br_v\) are both continuous and 
+    \(|\br_u\times\br_v|\) is never \(0\) for \((u,v)\) in the interior of the domain 
+    (this means that at any point on the surface, the normal vector to the tangent plane is not \(\bm{0}\)).
+    Show that \(\br(u,v)\) is continuous.
+        \ifprintanswers
+            \begin{solution}
+            We first compute \(\br_u\), \(\br_v\), \(\br_u\times\br_v\), and \(|\br_u\times\br_v|\).
+            \begin{align*}
+            \br_u(u,v) & = \gen{
+                                1+0,1-0,2u-0
+                               }\\
+                        & = \gen{1,1,2u}\\
+            \br_v(u,v)  & = \gen{0+1,0-1,0-2v}\\
+                        & = \gen{1,-1,-2v}.\\
+            \br_u\times\br_v & = 
+            \left|\begin{NiceMatrix}
+                \bi & \bj & \bk \\
+                1 & 1 & 2u \\
+                1 & -1 & -2v\\
+            \end{NiceMatrix}\right|\\
+            & = \gen{2u-2v,2u+2v,-2}\\
+            |\br_u\times\br_v| & = \sqrt{(2u-2v)^2+(2u+2v)^2+(-2)^2}\\
+                & = \sqrt{
+                    4u^2-4uv+4v^2+4u^2+4uv+4v^2+4
+                }\\
+                & = \sqrt{8u^2+8v^2+4}
+            \end{align*}
+            It is clear that \(\br_u\)
+            and \(\br_v\) are continuous everywhere (constant functions and polynomials). 
+            The only way \(|\br_u\times\br_v|=\sqrt{8u^2+8v^2+4}=0\) is if \(8u^2+8v^2+4=0\). Since \(8u^2+8v^2+4\ge4\) for any \((u,v)\) we know \(|\br_u\times\br_v|\) is never 0.
+
+            This means the surface is continuous
+
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+    \part Find an equation of the tangent plane to the parametric surface \(\br(u,v)\) at the point 
+    \(u=1\) and \(v=-1\).
+        \ifprintanswers
+            \begin{solution}
+                A point on the tangent plane is given by 
+                \(\br(1,-1)=(0,2,0)\). Using \(\br_u\times\br_v\) found above,
+                \begin{align*}
+                    \br_u\times\br_v(1,-1) & = \gen{2(1)-2(-1),2(1)+2(-1),-2}\\
+                    & = \gen{4,0,-2}
+                \end{align*}
+                Therefore an equation for the tangent plane is
+                \begin{align*}
+                    \gen{4,0,-2}\cdot\gen{x-0,y-2,z-0} & = 0\\
+                    4(x-0)+0(y-2)-2(z-0) & = 0 \\
+                    4x-2z & = 0
+                \end{align*}
+            \end{solution}
+        \else
+            \vfill
+        \fi
+
+
+    \end{parts}
+    
+\end{questions}
+
+\end{document}
+
+%soln : Question environment
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
