@@ -7,8 +7,8 @@
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
 
-%\printanswers
-\noprintanswers
+\printanswers
+%\noprintanswers
 
 \begin{document}
 
@@ -22,6 +22,22 @@
 \question Find and sketch the domain of \(f(x,y)=\dfrac{\sqrt{9-x^2-y^2}}{\sqrt{x^2+y^2-4}}\)
 \ifprintanswers
         \begin{solution}
+            The domain for this function is everywhere that
+            \[
+                9-x^2-y^2\ge 0 \quad \text{and}\quad x^2+y^2-4>0
+            \]
+            which is equivalent to 
+            \[
+                x^2+y^2\le 9 \quad \text{and}\quad x^2+y^2>4
+            \]
+            \begin{tikzpicture}
+                \draw[<->,thin] (-4,0)--(4,0) node[right] {$x$};
+                \draw[<->,thin] (0,-4)--(0,4) node[right] {$y$};
+                \draw[very thin,gray] (-4,-4) grid (4,4) ;
+                \draw[dashed,fill=gray!75,even odd rule] (0,0) circle[radius=3] (0,0) circle[radius=2];
+                \draw (0,0) circle[radius=3];
+
+            \end{tikzpicture}
         \end{solution}
     \else
         \vfill
@@ -32,24 +48,7 @@
 \part What is the domain of \(f(x,y)\)?
     \ifprintanswers
         \begin{solution}
-        \begin{center}
-            \begin{tikzpicture}
-                \begin{axis}[xmin=-5,xmax=5,ymin=-5,ymax=5]
-                    \addplot [dashed,<->] coordinates {(-4.5,4.5) (4.5,-4.5)};
-                    \addplot [dashed,<->] coordinates {(-4.5,-4.5) (4.5,4.5)};
-                \end{axis}
-                \begin{scope}[shift={(8,0)}]
-                \begin{axis}[xmin=-5,xmax=5,ymin=-5,ymax=5]                    
-                    \addplot [dashed,fill=gray!50, fill opacity=0.5] coordinates 
-                        {(-4.5,4.5) (0,0) (-4.5,-4.5) (-4.5,4.5)};
-                    \addplot [dashed,fill=gray!50, fill opacity=0.5] coordinates {(4.5,-4.5) (4.5,4.5) (0,0) (4.5,-4.5)};
-                    \addplot [<->] coordinates {(-4.5,4.5) (4.5,-4.5)};
-                    \addplot [<->] coordinates {(-4.5,-4.5) (4.5,4.5)};                    
-                \end{axis}
-                \end{scope}
-            \end{tikzpicture}            
-        \end{center}
-
+        \(f(x,y)\) is defined as long as \(x^2+y^2\ne 0\), which means everywhere except the point \((0,0)\), i.e. \(\{(x,y)\in\R^2~~|~~(x,y)\ne (0,0)\}\).
         \end{solution}
     \else
         \vspace{1cm}
@@ -59,18 +58,32 @@
 
 \ifprintanswers
         \begin{solution}
-             \begin{tikzpicture}
-            \begin{axis}[xmin=-6,xmax=6,ymin=-6,ymax=6,width=.6\textwidth,xtick distance=1,ytick distance=1]
-                \coordinate (center) (0,0);
-            \end{axis}
+         \begin{center}
+        \begin{tikzpicture}[scale=.75]
+            \draw[very thin, gray] (-6,-6) grid (6,6);
+            \draw[thin,<->] (-6,0)--(6,0);
+            \draw[thin,<->] (0,-6)--(0,6);
+
+            \foreach \k in {1,2,3,4,5}
+            {
+
+                \draw[thick] (0,0) circle[radius=\k];
+            }
+            \foreach \x in {0,1,2,3,4,5}{
+                \node[draw,fill=white] at (\x,0) {$\x$};
+            }
+            
         \end{tikzpicture}
+        \end{center}
         \end{solution}
     \else
         \vfill
     \fi
-    \part Use the above to sketch \(f(x,y)\). Illustrate the curves cooresponding to curves drawn in the contour plot above.
+    \part 
+    Use the above to sketch \(f(x,y)\). Illustrate the curves cooresponding to curves drawn in the contour plot above.
     \ifprintanswers
         \begin{solution}
+        \includegraphics[width=.75\textwidth]{cone_with_curves.pdf}
         \end{solution}
     \else
         \vfill

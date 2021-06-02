@@ -6,9 +6,10 @@
 
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
+\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}}
 
-%\printanswers
-\noprintanswers
+\printanswers
+%\noprintanswers
 
 \begin{document}
 
@@ -24,6 +25,18 @@
         \part \(f(x,y)=\dfrac{2x+x^2}{y}\)
             \ifprintanswers
                 \begin{solution}
+                    \begin{equation*}
+                        \begin{aligned}
+                            f_x&=\dfrac{2+2x}{y}\\
+                            f_{xx} & = \dfrac{2}{y}\\
+                            \end{aligned}
+                            \quad
+                        \begin{aligned}
+                            f_y&= -\dfrac{2x+x^2}{y^2}\\
+                            f_{yy}&=\dfrac{4x+2x^2}{y^3}
+                        \end{aligned}
+                        \quad f_{xy}=-\dfrac{2+2x}{y^2}
+                    \end{equation*}
                 \end{solution}
             \else
                 \vfill
@@ -32,6 +45,18 @@
         \part \(f(x,y)=\ln(x)\sin(\pi y)\)
             \ifprintanswers
                 \begin{solution}
+                \begin{equation*}
+                        \begin{aligned}
+                            f_x&=\dfrac{\sin(\pi y)}{x}
+                            f_{xx} &= -\dfrac{\sin(\pi y)}{x^2}
+                            \end{aligned}
+                            \quad
+                        \begin{aligned}
+                            f_y&=\pi\ln(x)\cos(\pi y)
+                            f_{yy}&=-\pi^2\ln(x)\sin(\pi y)
+                        \end{aligned}
+                        \quad f_{xy}= \dfrac{\pi \cos(\pi y)}{x}
+                    \end{equation*}
                 \end{solution}
             \else
                 \vfill
@@ -42,6 +67,12 @@
     \question Find all first order partial derivatives of the function \(h(x,y,z,t)=x^2y\cos(z/t)\)
             \ifprintanswers
                 \begin{solution}
+                    \begin{align*}
+                        h_{x} & = 2xy\cos(z/t)\\
+                        h_{y} & = x^2\cos(z/t)\\
+                        h_{z} & = -\dfrac{x^2y\sin(z/t)}{t}\\
+                        h_{t} & = \dfrac{x^2yz\sin(z/t)}{t^2}
+                    \end{align*}
                 \end{solution}
             \else
                 \vfill
@@ -52,6 +83,17 @@
     \question Verify Clairaut's theorem for \(f(x,y)=(2x+3y^2)^{10}\)
         \ifprintanswers
                 \begin{solution}
+                    \begin{equation}
+                        \begin{aligned}
+                            f_{x}&=20(2x+3y^2)^9\\
+                            f_{xy}&=20(9)(6y)(2x+3y^2)^8 = 1080y(2x+3y^2)^8\\
+                        \end{aligned}
+                        \quad 
+                        \begin{aligned}
+                            f_{y}&=60y(2x+3y^2)^9
+                            f_{yx}&=1080y(2x+3y^2)^8
+                        \end{aligned}
+                    \end{equation}
                 \end{solution}
             \else
                 \vfill
@@ -62,9 +104,18 @@
         \frac{x^2}{4}+2y^2-z^2=1
     \]
 
-    Use implicit differentiation to express both \(\frac{\partial z}{\partial x}\) and \(\frac{\partial z}{\partial y}\) as functions of \(x\) and \(y\).
+    Use implicit differentiation to express both \(\frac{\partial z}{\partial x}\) and \(\frac{\partial z}{\partial y}\) as functions of \(x\), \(y\), and \(z\).
     \ifprintanswers
                 \begin{solution}
+                    \begin{align*}
+                        \frac{\partial}{\partial x}\left(\frac{x^2}{4}+2y^2-z^2\right) &= \frac{\partial}{\partial x}(1)\\
+                        \frac{1}{2}x-2z\frac{\partial z}{\partial x}&=0\\
+                        \pd{z}{x} & = \frac{x}{4z}.
+                    \end{align*}
+                    Similiarly,
+                        \[
+                            \pd{z}{y} = \frac{2y}{z}.
+                        \]
                 \end{solution}
             \else
                 \vfill

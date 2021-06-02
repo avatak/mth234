@@ -1,33 +1,231 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{TEMPLATE} %PUT DATE HERE
+\newcommand{\qdate}{14.5 The Chain Rule} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
+\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}}
+\usepackage{cleveref}
 
-%\printanswers
-\noprintanswers
+\printanswers
+%\noprintanswers
 
 \begin{document}
 
 \section*{\qdate}
 
 
-\subsection*{Template}
+%\subsection*{Template}
+
+
+
+\begin{info}
+~
+
+    \noindent 
+    Given a differentiable function \(z=f(x,y)\) with \(x=x(t)\) and \(y=y(t)\)
+    differentiable functions of \(t\), then \(z\) is a differentiable function of \(t\) with
+    \[
+        \frac{\partial z}{\partial t}=\pd{f}{x}\pd{x}{t}+\pd{f}{y}\pd{y}{t}
+    \]
+    or equivalently
+    \[
+        \pd{z}{t}=\pd{z}{x}\pd{x}{t}+\pd{z}{y}\pd{y}{t}
+    \]
+    \[
+        f_t = f_x x_t + f_y y_t
+    \]
+
+    \noindent More generally, if \(z=f(x,y)\) and \(x=x(s,t)\), 
+\end{info}
 
 \begin{questions}
 
-\question 
+\question Suppose \(z=f(x,y)\) where \(f\) is differentiable and
+    \begin{equation*}
+        \begin{aligned}[c]
+            x&=g(t)\\
+            g(3)&=2\\
+            g'(3)&=5\\
+            f_x(2,7)&=6
+        \end{aligned}
+        \qquad
+        \begin{aligned}[c]
+            y&=h(t)\\
+            h(3)&=7\\
+            h'(3)&=-4\\
+            f_y(2,7)&=-8
+        \end{aligned}
+    \end{equation*}
+    Find \(\pd{z}{t}\) when \(t=3\).
     \ifprintanswers
         \begin{solution}
+            \begin{align*}
+                \pd{z}{t} & = \pd{z}{x}\pd{x}{t}+\pd{z}{y}\pd{y}{t}\\
+                & = f_{x}g'(t)+f_yh'(t)
+                \pd{z}{t}|_{t=3} & = f_{x}(2,7)g'(3)+f_{y}(2,7)h'(3) \\
+                    & = 6(5)+(-8)(-4)\\
+                    & = 62
+            \end{align*}
         \end{solution}
     \else
         \vfill
     \fi
 
-    
+\question Find \(\pd{z}{t}\) if \(z=x^2+y^2+xy\) with \(x=\sin t\) and \(y=e^t\)
+    \ifprintanswers
+        \begin{solution}
+
+        \[
+            (2x+y)\cos t+(2y+x)e^t
+        \]
+        \end{solution}
+    \else
+        \vfill
+        \newpage
+    \fi 
+\question Find \(\pd{w}{t}\) if \(w=xe^{y/z}\) with 
+\(x=t^2\), \(y=1-t\), \(z=1+2t\).
+    \ifprintanswers
+        \begin{solution}
+            \[
+                e^{y/z}\left(2t-(x/z)-(2xy/z^2)\right)
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Use the chain rule to find 
+\(\pd{z}{s}\) and \(\pd{z}{t}\) if \(z=e^r\cos(\theta)\) with \(r=st\) and \(0=\sqrt{s^2+t^2}\)
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \pd{z}{s} = e^r\left(t\cos\theta -\dfrac{s}{\sqrt{s^2+t^2}}\sin\theta\right)
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Let \(z=x^4+x^2y\), with \(x=s+2t-u\) and \(y=stu^2\).
+Find \(\pd{z}{s}\), \(\pd{z}{t}\), and \(\pd{z}{u}\) when \(s=4\), \(t=2\), \(u=1\).
+    \ifprintanswers
+        \begin{solution}
+            We will need
+            \begin{align*}
+                \pd{z}{x} & = 4x^3+2xy\\
+                \pd{z}{y}&=x^2\\
+                \pd{x}{s}&=1\\
+                \pd{y}{s}&=tu^2
+            \end{align*}
+            When \(s=4,t=2,u=1\), 
+            \[
+                x=4+2(2)-1 = 7\quad\text{and}\quad y=(4)(2)(1)^2=8
+            \]
+            Then 
+            \begin{align*}
+                \pd{z}{s} & = \pd{z}{x}\pd{x}{s}+\pd{z}{y}\pd{y}{s}\\
+                    & = \left(4(7)^3+2(7)(8)\right)\left(1\right)+\left(7^2\right)\left((2)(1)^2\right)\\
+                        & = 1582
+            \end{align*}
+            Proceeding similarly gives the following
+            \begin{align*}         
+                \pd{z}{s} & = 1582\\
+                \pd{z}{t} & = 3164\\
+                \pd{z}{u} & = -700 
+            \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\newpage
+
+\begin{info}
+~
+If an equation can be expressed as \(F(x,y)=0\) then 
+    \begin{equation} \label{eqn:implicit_xy}
+        \pd{y}{x} = -\dfrac{F_x}{F_y}
+    \end{equation}
+and if \(z=f(x,y)\), then we can rewrite this in the form \(F(x,y,z)=0\) and
+    \begin{equation}\label{eqn:implicit_xyz}
+        \pd{z}{x} = -\pd{F_x}{F_z} \qquad \pd{z}{y}=-\pd{F_y}{F_z}
+    \end{equation}
+\end{info}
+
+\question Use \Cref{eqn:implicit_xy} to find \(\pd{y}{x}\)
+    \begin{parts}
+        \part \(y\cos x=x^2+y^2\)
+    \ifprintanswers
+        \begin{solution}
+            Set \(F(x,y)=x^2+y^2-y\cos x\). Then 
+            \[
+                F_{x} = 2x+y\sin x \quad\text{and}\quad F_{y}=2y-\cos(x)
+            \]
+            so 
+            \[
+                \pd{y}{x} = -\dfrac{2x+y\sin x}{2y-\cos x} = \dfrac{2x+y\sin x}{\cos x-2y}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\tan^{-1}(x^2y) = x+xy^2\)
+    \ifprintanswers
+        \begin{solution}
+            Setting \(F(x,y)=\tan^{-1}(x^2y)-x+xy^2 should result in something equivalent to
+            \[
+                \pd{y}{x} = \dfrac{1+x^4y^2+y^2+x^4y^4-2xy}{x^2-2xy-2x^5y^3}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+    \end{parts}
+
+\question Use \Cref{eqn:implicit_xyz} to find \(\pd{z}{x}\) and \(\pd{z}{y}\)
+    \begin{parts}
+    \part \(x^2+2y^2+3z^2=1\)
+    \ifprintanswers
+        \begin{solution}
+            If \(F(x,y,z)=x^2+2y^2+3z^2-1\),
+            \begin{equation}
+            \begin{aligned}
+                F_{x}&=2x
+                F_{y}&=4y
+                F_{z}&=6z
+            \end{aligned}
+            \end{equation}
+            So 
+            \[
+                \pd{z}{x} = -\dfrac{F_x}{F_z} = -\dfrac{2x}{6z} = -\dfrac{x}{3z}
+            \]
+            and 
+            \[
+                \pd{z}{y}= -\dfrac{2y}{3z}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(e^z=xyz\)
+    \ifprintanswers
+        \begin{solution}
+            Set \(F(x,y,z)=e^z-xyz\).
+            \[
+                \pd{z}{x}=\dfrac{yz}{e^z-xy},\quad \pd{z}{y}=\dfrac{xz}{e^z-xy}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+    \end{parts}
+
+
+
 \end{questions}
 
 \end{document}

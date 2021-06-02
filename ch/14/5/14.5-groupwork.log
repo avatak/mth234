@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  2 JUN 2021 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  2 JUN 2021 10:41
 entering extended mode
-**"./14.1 group work.tex"
-(14.1 group work.tex
+**./14.5-groupwork.tex
+(14.5-groupwork.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-07>
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/exam\exam.cls
@@ -1029,23 +1029,36 @@ File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))) (14.1 group work.aux)
-\openout1 = `"14.1 group work.aux"'.
+)))) (14.5-groupwork.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Warning: Label `part@6@1' multiply defined.
+
+
+LaTeX Warning: Label `part@6@1@cref' multiply defined.
+
+
+LaTeX Warning: Label `part@6@2' multiply defined.
+
+
+LaTeX Warning: Label `part@6@2@cref' multiply defined.
+
+)
+\openout1 = `14.5-groupwork.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1107,14 +1120,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 13.
+LaTeX Info: Redefining \microtypecontext on input line 15.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 13.
+LaTeX Info: Redefining \showhyphens on input line 15.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1131,7 +1144,10 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1139,7 +1155,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1148,44 +1164,211 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \vbox (badness 4341) detected at line 78
- []
-
 [1{C:/Users/shult/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-]
+] [2]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 147.
+Package mdframed Info: Not enough space on this page on input line 157.
 
-pdfTeX warning: pdflatex.EXE (file ./cone_with_curves.pdf): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<cone_with_curves.pdf, id=15, 614.295pt x 545.39758pt>
-File: cone_with_curves.pdf Graphic file (type pdf)
-<use cone_with_curves.pdf>
-Package pdftex.def Info: cone_with_curves.pdf  used on input line 86.
-(pdftex.def)             Requested size: 373.16885pt x 331.3189pt.
-[2 <./cone_with_curves.pdf>]
-This exam contains 2 questions with 3 parts, 0 subparts, and 0 subsubparts.
-(14.1 group work.aux) ) 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180             \[
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.182             \]
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{TheSolution} on input line 179 ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182             \]
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.182             \]
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.182             \]
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\endexam@MakeFramed ... \z@ \penalty -100 \egroup 
+                                                  \begingroup \exam@put@fram...
+l.183         \end{solution}
+                            
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\exam@put@frame ...\advance \dimen@ -\exam@fb@frh 
+                                                  \relax \expandafter \endgr...
+l.183         \end{solution}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.183         \end{solution}
+                            
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.183         \end{solution}
+                            
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: \begin{solution} on input line 178 ended by \end{TheSolution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183         \end{solution}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{parts} on input line 160 ended by \end{solution}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183         \end{solution}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{questions} on input line 44 ended by \end{parts}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187     \end{parts}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.189 \question
+                Use \Cref{eqn:implicit_xyz} to find \(\pd{z}{x}\) and \(\pd{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{questions}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \end{questions}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.229 \end{questions}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+[3]
+This exam contains 6 questions with 4 parts, 0 subparts, and 0 subsubparts.
+(14.5-groupwork.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 31588 strings out of 479173
- 782334 string characters out of 2854167
- 1252725 words of memory out of 3000000
- 48655 multiletter control sequences out of 15000+600000
- 413210 words of font info for 79 fonts, out of 8000000 for 9000
+ 31655 strings out of 479173
+ 784376 string characters out of 2854167
+ 1259722 words of memory out of 3000000
+ 48731 multiletter control sequences out of 15000+600000
+ 412389 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,10n,107p,793b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/shult/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/shult/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/shult/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/shul
-t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
-sers/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
-ers/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on "14.1 group work.pdf" (2 pages, 193247 bytes).
+ 105i,10n,107p,790b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/shult/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/shult/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/shult/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/shult/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on 14.5-groupwork.pdf (3 pages, 93643 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 20498 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 16397 words of extra memory for PDF output out of 17280 (max. 10000000)
 

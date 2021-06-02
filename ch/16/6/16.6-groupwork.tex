@@ -1,7 +1,7 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{16.6} %PUT DATE HERE
+\newcommand{\qdate}{16.6 More Parametric Surfaces} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
@@ -16,7 +16,7 @@
 \section*{\qdate}
 
 
-\subsection*{More parameterization of surfaces}
+%\subsection*{More Parametric Surfaces}
 
 \begin{questions}
 
@@ -122,16 +122,84 @@
             \end{solution}
         \else
             \vfill
+            \newpage
         \fi
 
 
     \end{parts}
-    
+
+\question Find two parametric representations for the part of the plane \(z=3x+5y\) that lies inside the cylinder \(x^2+y^2=4\) by completing the following
+\begin{parts}
+    \part 
+    \[ 
+        \br_1(u,v) = \gen{ u ,\underline{~~~~~~~~~~},\underline{~~~~~~~~~~}}\qquad \text{with}\quad u^2+v^2\le \underline{~~~~~~~~~~}
+    \]
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \br_1(u,v) = \gen{u,v,3u+5v},\quad u^2+v^2\le 4
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part 
+    \[
+        \br_2(s,t) = \gen{s\cos(t),s \sin(t), \underline{~~~~~~~~~~}}\quad \text{with}\quad s\in [\underline{~~~~~},\underline{~~~~~}],\quad t\in [\underline{~~~~~},\underline{~~~~~}]
+    \]
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \br_2(s,t) = \gen{s\cos(t),s\sin(t),3s\cos(t)+5s\sin(t)},\quad s\in[0,2],\quad t\in [0,2\pi]
+                \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+
+\question Let \(S\) be the surface consisting of the part of the sphere \(x^2+y^2+z^2=16\) that lies between the planes 
+\(z=-2\) and \(z=2\).
+
+\begin{parts}
+    \part Find a parametric representatino \(\br(u,v)\) of \(S\) by completing the following
+        \[
+            \br(u,v) = \gen{4\cos(u)\sin(v),\underline{~~~~~},\underline{~~~~~}}
+        \]
+            \[ u\in[0,2\pi]\quad \text{and}\quad t\in[0,2\pi]\]
+        \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part Find a parametric representation of the boundary curve of \(S\) where \(z=2\)
+        \[
+            \br_1(t)=\gen{\underline{~~~~~},\underline{~~~~~},2},\quad t\in[0,2\pi]
+        \]
+    \ifprintanswers
+    \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part Find a parametric representation of the boundary curve of \(S\) where \(z=-2\)
+    \[
+        \br_2(t)=\gen{\underline{~~~~~},\underline{~~~~~},-2},\quad t\in[0,2\pi]
+    \]
+        \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+
 \end{questions}
 
 \end{document}
 
-%soln : Question environment
+% soln : Question environment
     \ifprintanswers
         \begin{solution}
         \end{solution}
