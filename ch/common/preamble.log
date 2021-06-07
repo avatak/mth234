@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  1 JUN 2021 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  4 JUN 2021 12:49
 entering extended mode
 **./preamble.tex
 (preamble.tex
@@ -162,7 +162,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \newtheorem*{theorem}{
+l.31 \newtheorem*{theorem}{
                            Theorem}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -175,7 +175,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \newtheorem*{theorem}{T
+l.31 \newtheorem*{theorem}{T
                             heorem}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -188,7 +188,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
-l.30 \surroundwithmdframed
+l.32 \surroundwithmdframed
                           []{theorem}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -206,12 +206,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 29--31
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--33
 []
  []
 
 ! Undefined control sequence.
-l.32 \theoremstyle
+l.34 \theoremstyle
                   {definition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -226,7 +226,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \theoremstyle{d
+l.34 \theoremstyle{d
                     efinition}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -249,7 +249,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33     \newtheorem*{definition}{
+l.35     \newtheorem*{definition}{
                                   Definition}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -266,7 +266,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.34     \surroundwithmdframed
+l.36     \surroundwithmdframed
                               []{definition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -294,7 +294,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35     \newtheorem*{info}{
+l.37     \newtheorem*{info}{
                             Useful Information}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -318,7 +318,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.36     \surroundwithmdframed
+l.38     \surroundwithmdframed
                               []{info}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -333,7 +333,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.37 \theoremstyle
+l.39 \theoremstyle
                   {remark}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -355,7 +355,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38     \newtheorem*{remark}{
+l.40     \newtheorem*{remark}{
                               Remark}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -368,7 +368,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 ! Undefined control sequence.
-l.39     \surroundwithmdframed
+l.41     \surroundwithmdframed
                               []{remark}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -385,14 +385,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 32--40
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--42
 []
  []
 
 ! Undefined control sequence.
 <argument> \undefinedpagestyle 
                                
-l.45 \pagestyle{headandfoot}
+l.47 \pagestyle{headandfoot}
                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -401,7 +401,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.46 \firstpageheadrule
+l.48 \firstpageheadrule
                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -410,7 +410,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.47 \runningheadrule
+l.49 \runningheadrule
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -419,7 +419,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.48 \firstpageheader
+l.50 \firstpageheader
                      {\course}{\quiz}{\qdate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -428,7 +428,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.48 \firstpageheader{\course
+l.50 \firstpageheader{\course
                              }{\quiz}{\qdate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -437,7 +437,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.48 \firstpageheader{\course}{\quiz
+l.50 \firstpageheader{\course}{\quiz
                                     }{\qdate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -446,7 +446,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.48 \firstpageheader{\course}{\quiz}{\qdate
+l.50 \firstpageheader{\course}{\quiz}{\qdate
                                             }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -455,7 +455,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.49 \runningheader
+l.51 \runningheader
                    {\course}{\quiz}{\qdate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -464,7 +464,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.49 \runningheader{\course
+l.51 \runningheader{\course
                            }{\quiz}{\qdate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -473,7 +473,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.49 \runningheader{\course}{\quiz
+l.51 \runningheader{\course}{\quiz
                                   }{\qdate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -482,7 +482,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.49 \runningheader{\course}{\quiz}{\qdate
+l.51 \runningheader{\course}{\quiz}{\qdate
                                           }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -491,7 +491,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.50 \runningfooter
+l.52 \runningfooter
                    {}{}{}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -506,13 +506,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \usepackage{
+l.55 \usepackage{
                  color}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.54 \shadedsolutions
+l.56 \shadedsolutions
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -521,7 +521,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.55 \definecolor
+l.57 \definecolor
                  {SolutionColor}{rgb}{0.8,0.9,1}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -536,7 +536,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 \definecolor{S
+l.57 \definecolor{S
                    olutionColor}{rgb}{0.8,0.9,1}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -567,7 +567,7 @@ Missing character: There is no 9 in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no 1 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 55--56
+Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
 [] 
  []
 
@@ -578,13 +578,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \usepackage{
+l.59 \usepackage{
                  pgfplots}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.58     \pgfplotsset
+l.60     \pgfplotsset
                      {every axis/.append style={
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -599,7 +599,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58     \pgfplotsset{e
+l.60     \pgfplotsset{e
                        very axis/.append style={
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -704,9 +704,9 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no = in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 63.
+(Font)              <7> on input line 65.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 63.
+(Font)              <5> on input line 65.
 Missing character: There is no , in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -735,7 +735,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.70     \pgfplotsset
+l.72     \pgfplotsset
                      {compat=1.17}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -762,10 +762,10 @@ Missing character: There is no 7 in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 30 strings out of 479173
- 459 string characters out of 2854167
+ 33 strings out of 479173
+ 468 string characters out of 2854167
  286108 words of memory out of 3000000
- 17743 multiletter control sequences out of 15000+600000
+ 17746 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  18i,1n,13p,117b,60s stack positions out of 5000i,500n,10000p,200000b,80000s

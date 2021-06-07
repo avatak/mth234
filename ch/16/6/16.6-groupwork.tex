@@ -162,13 +162,17 @@
 \(z=-2\) and \(z=2\).
 
 \begin{parts}
-    \part Find a parametric representatino \(\br(u,v)\) of \(S\) by completing the following
+    \part Find a parametric representation \(\br(u,v)\) of \(S\) by completing the following
         \[
             \br(u,v) = \gen{4\cos(u)\sin(v),\underline{~~~~~},\underline{~~~~~}}
         \]
-            \[ u\in[0,2\pi]\quad \text{and}\quad t\in[0,2\pi]\]
+            \[ u\in[0,2\pi]\quad \text{and}\quad v\in[\underline{~~~~~},\underline{~~~~~}]\]
         \ifprintanswers
         \begin{solution}
+        \[
+            \br(u,v) = \gen{4\cos(u)\sin(v),4\sin(u)\sin(v),4\cos(v)}
+        \]
+        \[ u\in[0,2\pi]\quad \text{and}\quad v\in[\pi/3,2\pi/3]\]
         \end{solution}
     \else
         \vfill
@@ -178,7 +182,11 @@
             \br_1(t)=\gen{\underline{~~~~~},\underline{~~~~~},2},\quad t\in[0,2\pi]
         \]
     \ifprintanswers
-    \begin{solution}
+        \begin{solution}
+        If \(z=2\), our equation becomes \(x^2+y^2=12\), i.e. a circle with radius \(2\sqrt{3}\).
+        \[
+              \br_1(t)=\gen{2\sqrt{3}\cos(t),2\sqrt{3}\sin(t),2},\quad t\in[0,2\pi]
+        \]
         \end{solution}
     \else
         \vfill
@@ -189,6 +197,9 @@
     \]
         \ifprintanswers
         \begin{solution}
+            \[
+                \br_2(t)=\gen{2\sqrt{3}\cos(t),2\sqrt{3}\sin(t),-2}, \quad t\in[0,2\pi]
+            \]
         \end{solution}
     \else
         \vfill
