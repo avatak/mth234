@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  11 JUN 2021 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  14 JUN 2021 10:08
 entering extended mode
-**./15-1-gw.tex
-(15-1-gw.tex
+**./15-2-gw.tex
+(15-2-gw.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-07>
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/exam\exam.cls
@@ -1086,8 +1086,8 @@ File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))) (15-1-gw.aux)
-\openout1 = `15-1-gw.aux'.
+)))) (15-2-gw.aux)
+\openout1 = `15-2-gw.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -1188,7 +1188,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1196,7 +1196,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1208,27 +1208,29 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1{C:/Users/shult/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ] [2]
-This exam contains 3 questions with 2 parts, 0 subparts, and 0 subsubparts.
-(15-1-gw.aux) ) 
+This exam contains 5 questions with 4 parts, 0 subparts, and 0 subsubparts.
+(15-2-gw.aux) ) 
 Here is how much of TeX's memory you used:
- 32665 strings out of 479173
- 800861 string characters out of 2854167
- 1272800 words of memory out of 3000000
- 49695 multiletter control sequences out of 15000+600000
- 413172 words of font info for 78 fonts, out of 8000000 for 9000
+ 32608 strings out of 479173
+ 799448 string characters out of 2854167
+ 1264784 words of memory out of 3000000
+ 49647 multiletter control sequences out of 15000+600000
+ 412389 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,10n,107p,783b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,10n,107p,783b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmex10.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/shult/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/shult/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/shult/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/sh
-ult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 15-1-gw.pdf (2 pages, 83127 bytes).
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/shul
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
+sers/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb>
+Output written on 15-2-gw.pdf (2 pages, 83548 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18445 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 16397 words of extra memory for PDF output out of 17280 (max. 10000000)
 

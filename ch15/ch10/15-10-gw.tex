@@ -1,7 +1,7 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{TEMPLATE} %PUT DATE HERE
+\newcommand{\qdate}{15.10} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
@@ -16,11 +16,59 @@
 
 %\subsection*{Template}
 
+\begin{info}
+    \begin{itemize}
+            \item The \textbf{Jacobian} for a tranformation \(T\) given by \(x=x(u,v)\) and \(y=y(u,v)\) is
+            \[
+                \dfrac{(x,y)}{(x,y)}=
+                \left|\begin{NiceMatrix}
+                    \pd{x}{u} & \pd{x}{v}\\
+                        &\\
+                    \pd{y}{u} & \pd{y}{v}
+                \end{NiceMatrix}\right| = \pd{x}{u}\cdot\pd{y}{v}-\pd{x}{v}\cdot\pd{y}{u}
+            \]
+            \item 
+            \[
+                \iint_{R}f(x,y)~dA=\iint_{S}f(x(u,v),y(u,v))\left|\dfrac{(u,v)}{(u,v)}\right|~du~dv
+            \]
+    \end{itemize}
+\end{info}
+
+
 \begin{questions}
 
-\question 
+\question Show that the Jacobian of the transformation \(x=5u-v,y=u+3v\) is \(16\).
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
 
+\question Show that the Jacobian of the transformation \(x=e^{-r}\sin\theta\), \(y=e^r\cos\theta\) is \(\sin^2\theta-\cos^2\theta\).
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
 
+\newpage
+\question Evaluate \(\iint_R(x-3y)dA\) where \(R\) is the triangular region with vertices \((0,0)\),\((2,1)\), and \((1,2)\) using the transformation \(x=2u+v\), \(y=u+2v\). Make sure you evaluate it in such a way that the answer you get is \(-3\).
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Use the transformation \(x=2u\), \(y=3v\) to evaluate \(\iint_R x^2 dA\) where \(R\) is the region bounded by the ellipse \(9x^2+4y^2+36\) 
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
 
 \end{questions}
 

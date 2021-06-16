@@ -1,14 +1,14 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{TEMPLATE} %PUT DATE HERE
+\newcommand{\qdate}{15.2 Iterated Integrals} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
 
-%\printanswers
-\noprintanswers
+\printanswers
+%\noprintanswers
 
 \begin{document}
 
@@ -18,7 +18,99 @@
 
 \begin{questions}
 
-\question 
+\question Evaluate the following
+\begin{parts}
+    \part \(\int_{1}^4\int_{0}^2(6x^2y-2x)~dy~dx\)
+        \ifprintanswers
+        \begin{solution}
+            \begin{align*}
+                \int_{1}^4\int_{0}^2(6x^2y-2x)~dy~dx & = \int_{1}^4(3x^2y^2-2xy)|_{y=0}^{y=2}~dx\\
+                    &= \int_{1}^4(12x^2-4x)~dx\\
+                    &= 4x^3-2x^2|_{x=1}^{x=4}\\
+                    &= 4^4-2(16)-(4-2)\\
+                    &= 222
+            \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    
+    \part \(\int_0^1\int_0^1~v(u+v^2)^4~du~dv\)
+        \ifprintanswers
+        \begin{solution}
+            
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    
+    \part \(\int_{1}^4\int_1^2\left(\frac{x}{y}+\frac{y}{x}\right)~dy~dx\)
+        \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    
+
+    \part \(\iint_{R}ye^{-xy}~dA\), where \(R=[0,2]\times[0,3]\)
+        \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+\newpage
+
+%\question Suppose \(f(x,y),g(x),h(y)\) are continuous functions. Determine which statements below are true and which are false. If they are false, point out the error.
+%\begin{parts}
+%\part 
+ %   \begin{align*}
+   %     \int_{1}^3\int_{5}^8 f(x,y)~dx dy &= \int_1^3\int_5^8f(x,y)~dy~dx
+  %  \end{align*}
+%\part  
+ %   \begin{align*}
+  %  \end{align*}
+%\end{parts}
+
+\question If \(\int_0^1 f(x,y)~dy=4x\) evaluate
+    \[
+        \int_{0}^1\int_{2}^3 x^2f(x,y)~dx~dy
+    \]
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Find the volume of the solid that lies under the plane \(4x+6y-2z+15=0\) and above the rectangle \(R=\{(x,y)~|~-1\le x \le 2,-1\le y \le 1\}\).
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\question Find the volume of the solid in the first octant bounded by the cylinder \(z=16-x^2\) and the plane \(y=5\).
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\question Find the average value of \(f(x,y)=x^2y\) over the rectangle with vertices 
+\((-1,0), (-1,5), (1,5), (1,0)\).
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+
 
 
 

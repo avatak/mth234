@@ -19,18 +19,14 @@
 \begin{questions}
 
 \question Extimate the volume of the solid that lies below the surface 
-\(z=xy\) and above the rectangle contained in the \(xy\)-plane \(R=[0,6]\times[0,4]\). Use \(\Delta x=3\) and \(\Delta y=2\) and each sample point \((x_k,y_k)\) is the upper right corner of the $k$th rectangle.
+\(z=xy\) and above the rectangle contained in the \(xy\)-plane \(R=[0,6]\times[0,4]\). Use \(\Delta x=2\) and \(\Delta y=2\) and each sample point \((x_k,y_k)\) is the upper right corner of the $k$th rectangle.
 
 \begin{minipage}[b]{.4\textwidth}
 
 \emph{\(R\) is drawn to the right with dashed lines representing the appropriate rectangles and the sample points are marked.}
 
-\ifprintanswers
-    \begin{solution}
-    \end{solution}
-\else
     \vspace{7.5cm}
-    \fi
+    
 
 \end{minipage}~
 \begin{minipage}[t]{.5\textwidth}
@@ -58,9 +54,37 @@
     \end{tikzpicture}
 \end{minipage}
 
-\question Estimate \(\int\int_{R}\sin(x+y)~ dA\) where \(R=[0,\pi]\times[0,\pi]\) taking sample points at the lower left corners of each rectangle.
+\ifprintanswers
+    \begin{solution}
+        Let \(f(x,y)=xy\). The sample points are 
+        \[
+            (2,2),(2,4),(4,2),(4,4),(6,2),\quad \text{and}\quad (6,4).
+        \]
+        Therefore
+        \begin{align*}
+            \iint_{R} xy~dA & = f(2,2)\Delta A+f(2,4)\Delta A+f(4,2)\Delta A+f(4,4)\Delta A+f(6,2)\Delta A+f(6,4)\Delta A\\
+                & = 4(4)+8(4)+8(4)+16(4)+12(4)+24(4)\\
+                &=288.
+        \end{align*}
+    \end{solution}
+\else
+\fi
+
+\question Estimate \(\int\int_{R}\sin(x+y)~ dA\) where \(R=[0,\pi]\times[0,\pi]\) and \(\Delta x=\Delta y=\pi/2\) with sample points at the lower left corners of each rectangle.
 \ifprintanswers
         \begin{solution}
+            Again, let \(f(x,y)=\sin(x+y)\). The sample points are 
+            \[
+                (0,0),(\pi/2,0),(0,\pi/2),(\pi/2,\pi/2)
+            \]
+            and \(\Delta A=(\pi/2)(\pi/2)=\pi^2/4\).
+
+            Then 
+            \begin{align*}
+                \iint_{R}f(x,y)~dA & = f(0,0)\Delta A+f(\pi/2,0)\Delta A+f(0,\pi/2)\Delta A+f(\pi/2,\pi/2)\\
+                    & = 0+\pi^2/4+\pi^2/4+0\\
+                    & = \pi^2/2.
+            \end{align*}
         \end{solution}
     \else
         \vfill
@@ -73,6 +97,7 @@
     \part \(\int\int_{R}3~dA\) where \(R=\{(x,y)~|~-2\le x\le 2, 1\le y \le 6\}\)
     \ifprintanswers
         \begin{solution}
+            This is a ``box" with dimensions \(4\times 5\times 3\) so it's volume is \(60.\)
         \end{solution}
     \else
         \vfill
@@ -82,7 +107,24 @@
 
     \emph{Hint: First draw \(z=4-2y\) in the \(yz\)-plane and then use that to visualize what the portion of the plane \(z=4-2y\) looks like over the given region.}
     \ifprintanswers
+
+    The solid is the shape below 1 unit thick, which means the volume is simply the area of the shaded box and triangle.
+
         \begin{solution}
+            \begin{tikzpicture}
+            \draw[very thin,gray!30] (0,0) grid (5,5);
+            \draw[thin,<->] (-1,0)--(5.5,0) node[right] {$y$};
+            \draw[thin,<->] (0,-1)--(0,5.5) node[above] {$z$};
+            \draw (0,4)--(1,2) node[right] {~~~~~$z=4-2y$};
+            \draw[dashed] (1,2)--(2,0);
+            \draw[dashed,very thin] (1,0)--(1,2);
+            \draw[very thin] (1,0.1)--(1,-0.1) node[below] {$1$};
+            \draw[very thin] (.1,2)--(-.1,2) node[left] {$2$};
+            \draw[very thin] (.1,4)--(-.1,4) node[left] {$4$};
+            \draw[very thin,dashed] (0,2)--(1,2);
+            \end{tikzpicture}
+            So the volume of the solid is \(\text{(base)}\times\text(height)\) of the square plus \((1/2)\text{(base)\times(\height)}\) of the triangle, i.e.
+            \[(1)(2)+(1/2)(1*2)=3\].
         \end{solution}
     \else
         \vfill
