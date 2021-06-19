@@ -1,0 +1,185 @@
+\documentclass[12pt]{exam}
+
+\newcommand{\course}{MTH 234 Summer 2021}
+\newcommand{\qdate}{15.10} %PUT DATE HERE
+\newcommand{\quiz}{Group Work} 
+
+\input{../../common/preamble.tex}
+\newcommand{\bif}{\quad\iff\quad}
+
+%\printanswers
+\noprintanswers
+
+\begin{document}
+
+\section*{\qdate}
+
+%\subsection*{Template}
+
+\begin{info}
+    \begin{itemize}
+            \item The \textbf{Jacobian} for a tranformation \(T\) given by \(x=x(u,v)\) and \(y=y(u,v)\) is
+            \[
+                \dfrac{(x,y)}{(x,y)}=
+                \left|\begin{NiceMatrix}
+                    \pd{x}{u} & \pd{x}{v}\\
+                        &\\
+                    \pd{y}{u} & \pd{y}{v}
+                \end{NiceMatrix}\right| = \pd{x}{u}\cdot\pd{y}{v}-\pd{x}{v}\cdot\pd{y}{u}
+            \]
+            \item 
+            \[
+                \iint_{R}f(x,y)~dA=\iint_{S}f(x(u,v),y(u,v))\left|\dfrac{(u,v)}{(u,v)}\right|~du~dv
+            \]
+    \end{itemize}
+\end{info}
+
+
+\begin{questions}
+
+\question Let \(S\) be the square \(\{(u,v)~:~0\le u \le 1,0\le v\le 1\}\) and let \(T\) be the transformation
+    \[
+        x=v,~y=u(1+v^2)
+    \]
+\begin{parts}
+    \part Let \(L_1\),\(L_2\),\(L_3\), and \(L_4\) denote the left, bottom, right, and top sides of \(S\) respectively.
+
+    \(L_1\) is the line  \(u=0\) and \(0\le v\le 1\). So on \(L_1\), \(x=v\) and \(y=0\). So 
+
+    \[L_1 \mapsto y=1,\quad \text{with} 0\le x\le 1\]
+
+    Express the image of \(L_2\), \(L_3\), and \(L_4\) similarly.
+
+    \part Sketch the image of \(S\) under the transformation given.
+    \end{parts}
+
+\question Repeat the above instructions for \(S\) the triangular region of the \(uv\)-plane with vertices \((0,0)\), \((1,1)\), and \((0,1)\) with the transformation
+\[
+        x=u^2,y=v.
+\]
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\newpage
+
+\question Let \(R\) be the parallelogram with vertices \((0,0), (4,3), (2,4), (-2,1)\). Let \(S\) be the square \([0,1]\times[0,1]\). Find a transformation that maps \(S\) onto \(R\).
+
+Suggestion: Experiment and try stuff. What points in \(S\) are sent to the corners of \(R\)?
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+\question Evaluate the integral 
+\[
+        \iint_R e^{(x+y)/(x-y)}~dA
+\]
+where \(R\) is the trapezoidal region with vertices \((1,0), (2,0), (0,-2), (0,-1)\).
+\begin{parts}
+    \part Since this is not easy as written, we want to do a change of variables. Based on the given function, we will try
+    \[
+        u=x+y,\quad v=x-y.
+    \]
+    Then we want to use the transformation \(T\) given by \(x=\frac{1}{2}(u+v)\) and \(y=\)?
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+    \part Setting \(u=x+y\) and \(v=x-y\), what is the image of the trapezoidal region given?
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+    \part Evaluate the integral.
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+\ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+
+
+\newpage
+
+
+\question Evaluate \(\iint_{X}xy~dA\) where \(R\) is the region in the first quadrant bounded by
+\[
+    y=x,\quad y=3x,\quad xy=1, \quad xy=3.
+\]
+using the transformation \(x=u/v,y=v\).
+
+
+\begin{parts}
+    \part Complete the following, determining the image of each line or curve:
+    \begin{itemize}
+        \item
+            \[
+                y=x\quad \mapsto \quad v^2=u
+            \]
+        \item 
+            \[
+                y=3x \quad \mapsto \quad  
+            \]
+        \item 
+            \[
+                xy=1 \quad \mapsto \quad  u=1
+            \]    
+        \item 
+            \[
+                xy=3 \quad \mapsto \quad  
+            \]    
+\end{itemize}
+        \part Rewrite the original double integral using the given transformation in the formr
+        
+        \[
+            \int_{a}^b\int_{c}^d f(u,v)~dv~du
+        \]
+        What are the values of \(a,b,c,d\) and \(f(u,v)\)?
+        \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+        \part Evaluate the integral.
+        \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\end{parts}
+
+
+\end{questions}
+
+\end{document}
+
+% soln : Question environment
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
