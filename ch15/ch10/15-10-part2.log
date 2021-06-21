@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  18 JUN 2021 10:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  20 JUN 2021 23:48
 entering extended mode
 **./15-10-part2.tex
 (15-10-part2.tex
@@ -1086,23 +1086,31 @@ File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))) (15-10-part2.aux)
+))))
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+arypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)) (15-10-part2.aux)
 \openout1 = `15-10-part2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1164,14 +1172,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 13.
+LaTeX Info: Redefining \microtypecontext on input line 14.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 13.
+LaTeX Info: Redefining \showhyphens on input line 14.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1190,8 +1198,8 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 19.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+(mdframed)              on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1199,7 +1207,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (C:\Users\shult\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1235,16 +1243,17 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1{C:/Users/shult/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ] [2] [3]
+[4] [5] [6]
 This exam contains 5 questions with 8 parts, 0 subparts, and 0 subsubparts.
 (15-10-part2.aux) ) 
 Here is how much of TeX's memory you used:
- 32933 strings out of 479173
- 807271 string characters out of 2854167
- 1276774 words of memory out of 3000000
- 49961 multiletter control sequences out of 15000+600000
- 412971 words of font info for 79 fonts, out of 8000000 for 9000
+ 33246 strings out of 479173
+ 815141 string characters out of 2854167
+ 1284774 words of memory out of 3000000
+ 50265 multiletter control sequences out of 15000+600000
+ 413020 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,14n,107p,787b,930s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,14n,107p,787b,1027s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\shult\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
 en/ec/dpi600\tcrm1200.pk><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX
@@ -1256,9 +1265,9 @@ hult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
 Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb>
-Output written on 15-10-part2.pdf (3 pages, 93995 bytes).
+Output written on 15-10-part2.pdf (6 pages, 110774 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18445 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 18449 words of extra memory for PDF output out of 20736 (max. 10000000)
 
