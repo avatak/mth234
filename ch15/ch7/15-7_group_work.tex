@@ -7,8 +7,8 @@
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
 
-\printanswers
-%\noprintanswers
+%\printanswers
+\noprintanswers
 
 \begin{document}
 
@@ -25,10 +25,8 @@
         \begin{solution}
             \begin{align*}
                 \int_{0}^{3}\int_{0}^{x}\int_{x-y}^{x+y}~y~dz~dy~dx & = \int_{0}^{3}\int_{0}^{x} yz|_{x-y}^{x+y}~dy~dx\\
-                    &= \int_{0}^3 \int_0^x\left(2y^2\right) dy~dx\\
-                    &= \int_0^3 \frac{2}{3} x^3 ~dx\\
-                    &= \frac{1}{6}x^4|_0^3\\
-                    &= \frac{3^4}{6}=\frac{81}{6}=\frac{27}{2}
+                    &= \int_{0}^{3}\int_{0}^{x} y\left(x+y-(x-y)\right)~dy~dx\\
+                    &= \int_{0}^3 \int_0^x\left(2y^3\right) dy~dx
             \end{align*}
         \end{solution}
     \else
@@ -40,24 +38,6 @@
     \]
         \ifprintanswers
         \begin{solution}
-            A normal vector to the plane through the three non-zero points is 
-                \[
-                    \left|\begin{NiceMatrix}
-                        \bi & \bj & \bk \\
-                        -1 & 1 & 0 \\
-                        -1 & 0 & 1 
-                    \end{NiceMatrix}\right| = \gen{1,1,1}
-                \]
-                So the plane has equation \(x+y+z=1\) or \(z=1-x-y\).
-                \begin{align*}
-                    \iiint_T x^2~dV & = \int_0^1\int_0^{1-x}\int_0^{1-x-y}~x^2 ~dz~dy~dx\\
-                        &= \int_0^1\int_0^{1-x} x^2z|_0^{1-x-y}~dy~dx\\
-                        &= \int_0^1~x^2~\int_0^{1-x} 1-x-y~dy~dx\\
-                        &= \int_0^1 x^2 \left(y-xy-\frac{1}{2}y^2|_{y=0}^{y=1-x}\right)~dx\\
-                        &= \int_0^1 x^2\left(1-x-x(1-x)-\frac{1}{2}(1-x)^2\right)~dx\\
-                        &= \frac{1}{2} \int_0^1 x^2-2x^3+x^4 ~dx\\
-                        &= \frac{1}{2}\left(\frac{1}{30}\right)=\frac{1}{60}.
-                \end{align*}
         \end{solution}
     \else
         \vfill
@@ -66,14 +46,7 @@
     \(y=\sqrt{x}\), \(y=0\), and \(x=1\).
         \ifprintanswers
         \begin{solution}
-            \begin{align*}
-                \int_{0}^{1}\int_{0}^{\sqrt{x}}\int_{0}^{1+x+y}6xy~dz~dy~dx & = \int_{0}^{1}\int_{0}^{\sqrt{x}} 6xy+6x^2y+6xy^2 ~dy~dx\\
-                    &= \int_0^1\left(
-                        3xy^2+3x^2y^2+2xy^3|_0^{\sqrt{x}}
-                    \right) dx\\
-                    &= \int_0^1 3x^2+3x^3+2x^{5/2}~dx\\
-                    &= 1+\frac{3}{4}+\frac{4}{7}=\frac{65}{28}
-            \end{align*}\end{solution}
+        \end{solution}
     \else
         \vfill
     \fi 
@@ -85,9 +58,6 @@
     \part The solid enclosed by the cylinder \(y=x^2\) and the planes \(z=0\) and \(y+z=1\).
         \ifprintanswers
         \begin{solution}
-            \[
-                \int_0^1\int_{x^2}^{1}\int_{0}^{1-y}~dz~dy~dx = \frac{8}{15}
-            \]
         \end{solution}
     \else
         \vfill
@@ -96,9 +66,6 @@
         
         \ifprintanswers
         \begin{solution}
-            \[
-                \int_0^2\int_0^{4-2x} \int_{0}^{4-2x-y}~dz~dy~dx = \frac{16}{3}
-            \]
         \end{solution}
     \else
         \vfill

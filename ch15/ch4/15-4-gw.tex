@@ -1,7 +1,7 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{TEMPLATE} %PUT DATE HERE
+\newcommand{\qdate}{15.4 Double Integrals in Polar Coordinates} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
@@ -16,9 +16,106 @@
 
 %\subsection*{Template}
 
+\begin{info}
+    \[
+        \displaystyle\iint_R f(x,y)~dA = \int_\alpha^{\beta}\int_{a}^{b}~f(r\cos\theta,r\sin\theta)~r~dr~d\theta 
+    \]
+\end{info}
+
 \begin{questions}
 
-\question 
+\question Find \(\iint_R~\sin(x^2+y^2)~dA\) where \(R\) is the region in the first quadrant between the circles centered at the origin and radii 1 and 3.
+\ifprintanswers
+        \begin{solution}
+            \begin{align*}
+            \int_0^{\pi/2}\int_1^3 r\sin(r^2)~dr~d\theta & = \int_0^{\pi/2}-\frac{1}{2}\cos(r^2)|1^3~d\theta\\
+                &= \frac{\cos(9)-\cos(1)}{2} \int_0^{\pi/2}~1~d\theta\\
+                &= \left(\cos(9)-\cos(1)\right)\frac{\pi}{4}.
+            \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Find the area inside one loop of the rose \(r=\cos3\theta\)
+\ifprintanswers
+        \begin{solution}
+            We will find the area inside one loop of the rose \(r=\cos(n\theta)\) where \(n\) is any positive integer.
+
+            \(r=0\) when \(n\theta=\frac{\pi}{2}+k\pi\) where \(k\in \Z\), i.e \(\theta=\frac{\pi}{2n}+\frac{k}{n}\pi\). 
+            So one full loop of \(r=\cos(n\theta)\) occurs between \(\theta=-\pi/2n\) and \(\pi/2n\). If \(D\) is the region inside the loop,
+
+            \begin{align*}
+                \text{Area}(D) &= \iint_D~dA\\
+                    & = \int_{-\pi/2n}^{\pi/2n}\int_{0}^{\cos(n\theta)} r~dr~d\theta\\
+                    &= \int_{-\pi/2n}^{\pi/2n} \frac{1}{2}\cos^2(n\theta)~d\theta \\
+                    &= \int_{-\pi/2n}^{\pi/2n}\frac{1}{2}\frac{1+\cos(2n\theta)}{2}~d\theta\\
+                    &= \frac{1}{4}\int_{-\pi/2n}^{\pi/2n} 1+\cos(2n\theta)~d\theta\\
+                    &= \frac{1}{4}\left( \theta+\frac{1}{2n}\sin(2n\theta)|_{-\pi/2n}^{\pi/2n} \right)\\
+                    &= \frac{1}{4}\left(
+                        \frac{\pi}{2n}+\frac{1}{2n}\sin(\pi)-\left(-\frac{\pi}{2n}+\frac{1}{2n}\sin(-\pi)\right)
+                        \right)\\
+                        &= \frac{1}{4}\left(\frac{\pi}{n}\right)=\frac{\pi}{4n}
+            \end{align*}
+            In particular, the area of one leaf of \(r=\cos(3\theta)\) is \(\pi/12\). 
+        \end{solution}
+    \else
+        \vfill
+    \fi.
+
+
+\question Find the volume above the cone \(z=\sqrt{x^2+y^2}\) and below the sphere \(x^2+y^2+z^2=1\).
+\ifprintanswers
+        \begin{solution}
+            \[z=\sqrt{x^2+y^2}=\sqrt{r^2}=r\]
+            and 
+            \[
+                x^2+y^2+z^2=1 \quad\Rightarrow\quad z=\sqrt{1-r^2}
+            \]
+            gives
+            \begin{align*}
+                \int_0^{2\pi}\int_0^{1/4} r\sqrt{1-r^2}-r^2~dr~d\theta & = 
+            \end{align*}
+
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\newpage
+
+\question Evaluate \(\int_{-3}^3\int_{0}^{\sqrt{9-x^2}}\sin\left(x^2+y^2\right)~dy~dx\) by converting to polor coordinates.
+\ifprintanswers
+        \begin{solution}
+            Visually, \(y=0\) to \(y=\sqrt{9-x^2}\) is everything between the \(x-axis\) and a circle of radius 3
+            Since \(x\) ranges from \(-3\) to \(3\) this is the upper half of the above mentioned circle.
+            \begin{align*}
+                \int_0^{\pi}\int_{0}^{3} r\sin(r^2)~dr~d\theta & = \int_0^\pi -\frac{1}{2}\cos(r^2)|_0^3 ~d\theta\\
+                    &= \frac{1}{2}\left(1-\cos 9\right)\int_{0}^{\pi}1~d\theta\\
+                    &= \frac{\pi}{2}(1-\cos(9)).
+            \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Use polar coordinates to combine the sum
+\[
+        \int_{1/\sqrt{2}}^{1}\int_{\sqrt{1-x^2}}^{x}~xy~dy~dx + \int_1^{\sqrt{2}}\int_0^x xy~dy~dx+\int_{\sqrt{2}}^{2}\int_0^{\sqrt{4-x^2}}xy~dy~dx
+\] into a single double integral. Then evaluate the integral.
+\ifprintanswers
+        \begin{solution}
+            \begin{center}
+                \begin{tikzpi}
+            \end{center}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+
+
+
 
 
 
