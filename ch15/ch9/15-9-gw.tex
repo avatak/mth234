@@ -1,7 +1,7 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{15.9 Spherical Coordinates} %PUT DATE HERE
+\newcommand{\qdate}{15.9 Spherical Coord. \& 16.5 Curl/Divergence} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
@@ -14,25 +14,266 @@
 
 \section*{\qdate}
 
-%\subsection*{Template}
+\subsection*{Spherical Coordinates}
+\[
+    \boxed{x=\rho\sin\phi\cos\theta,\quad y=\rho\sin\phi\sin\theta,\quad z=\rho\cos\phi}
+\]
+\[
+    \boxed{\rho^2=x^2+y^2+z^2}
+\]
 
 \begin{questions}
 
 \question Convert the following, given in rectangular coordinates, to spherical coordinates
 \begin{parts}
     \part The point \((0,-2,0)\)
-    %s
+    \ifprintanswers
+        \begin{solution}
+            \begin{align*}
+                \rho &= \sqrt{0^2+(-2)^2+0^2} = 2\\
+                \cos\phi &= z/\rho\\
+                    &= 0.
+                \phi &= \cos^{-1}(0)\\
+                    &= \pi/2\\
+                \cos\theta &= x/\rho\sin\phi \\
+                    & = 0\\
+                    \theta & = 3\pi/2 (\text{y<0})
+            \end{align*}
+            \[
+            \boxed{2,3\pi/2,\pi/2}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
     \part \(z^2=x^2+y^2\)
-    %s
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \boxed{\cos^2\phi=\sin^2\phi}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
     \part \(x^2+z^2=9\)
-    %s
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \boxed{\rho^2\left(\sin^2\phi\cos^2\theta+\cos^2\phi\right)=9}
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
 \end{parts}
 
-\question Convert from spherical to rectangular coordinates:
+\question Describe, sketch, or identify the surface given in spherical coordinates
 \begin{parts}
-    
+    \part \(\phi=\pi/3\)
+    \ifprintanswers
+        \begin{solution}
+            This is the upper half of a cone
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\rho=2\)
+    \ifprintanswers
+        \begin{solution}
+            A sphere of radius 2.
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\theta=\pi/2\)
+    \ifprintanswers
+        \begin{solution}
+            Since we assume \(\rho\ge0\), this is the half of the \(yz\)-plane with \(y\ge 0\).
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\rho=\sin\theta\sin\phi\) (hint: try converting to rectangular coordinates using \(\rho^2\))
+    \ifprintanswers
+        \begin{solution}
+            \begin{align*}
+                \rho & =\sin\theta\sin\phi\\
+                \rho^2&= \rho\sin\theta\sin\phi\\
+                x^2+y^2+z^2 = y\\
+                x^2+y^2-y +(-1/2)^2 +z^2 = (-1/2)^2\\
+                x^2+\left(y-1/2\right)^2+z^2=1/4
+            \end{align*}
+            This is a sphere of radius \(1/2\) centered at \(0,1/2,0\).
+        \end{solution}
+    \else
+        \vfill
+    \fi
 \end{parts}
 
+\newpage
+
+\question Evaluate \(\iiint_B(x^2+y^2+z^2)^2~dV\) where \(B\) is a ball centered at the origin with radius \(5\).
+\ifprintanswers
+        \begin{solution}
+        \begin{align*}
+            \iiint_B(x^2+y^2+z^2)^2~dV &= \int_0^{\pi}\int_0^{2\pi}\int_0^5 (\rho^2)^2\rho^2\sin\phi~d\rho~d\theta~d\phi\\
+            & = \int_0^{\pi}\sin\phi\int_0^{2\pi}\int_0^5 \rho^6~d\rho~d\theta~d\phi\\
+            & = \int_0^{\pi}\sin\phi\int_0^{2\pi} \frac{5^7}{7}~d\theta~d\phi
+            & = \int_0^\pi \sin\phi \frac{5^7(2\pi)}{7} ~d\phi\\
+            & = \frac{5^6(2\pi)}{7}\left(\cos(\pi)-\cos(0)\right)\\
+            & = -\frac{4\pi5^7}{7}\\
+            & = -\frac{312500\pi}{7}
+        \end{align*}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\question Find the volume of the solid that lies above the cone \(\phi=\pi/3\) and below the sphere \(\rho=4\cos\phi\).
+\ifprintanswers
+        \begin{solution}
+            \[\int_0^{\pi/3}\int_0^{2\pi}\int_0^{4\cos\phi}\rho^2\sin\phi~d\rho~d\theta~d\phi=10\pi\]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+
+\newpage
+
+\subsection*{Curl and Divergence}
+
+If \(\bm{F}=\gen{P,Q,R}\),
+\[\boxed{
+    \mathrm{curl}\bm{F}=\nabla\times \bm{F}=\left|
+    \begin{NiceMatrix}
+    \bi & \bj & \bk \\
+    \pd{}{x} & \pd{}{y} & \pd{}{z}\\
+    P & Q & R
+    \end{NiceMatrix}\right|}
+\]
+\[
+    \boxed{\mathrm{div}\bm{F} = \nabla\cdot\bm{F}=\pd{P}{x}+\pd{Q}{y}+\pd{R}{z}}
+\]
+
+\question Find the curl and divergence of each vector field
+\begin{parts}
+    \part \(\bm{F}(x,y,z)=(x+yz)\bi+(y+xz)\bj+(z+xy)\bk\)
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \mathrm{curl}\bm{F}(x,y,z)= \left|\begin{NiceMatrix}
+                    \bi & \bj & \bk\\
+                    \pd{}{x} & \pd{}{y} & \pd{}{z}\\
+                    x+yz & y+xz & z+xy
+                \right|\end{NiceMatrix} = \gen{x-x,-(y-y),z-z} = \bm{0}.
+            \]
+            \[
+                \mathrm{div}\bm{F}= \pd{}{x}\left(x+yz\right)+\pd{}{y}(y+xz)+\pd{}{z}(z+xy)=3.
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\bm{F}(x,y,z)=\gen{e^x\sin y,e^y\sin z,e^z\sin x}\)
+    \ifprintanswers
+        \begin{solution}
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+
+
+\question Determine if the given vector field is conservative. If it is, find a function \(f\) so that \(\bm{F}=\nabla f\).
+\begin{parts}
+    \part \(\bm{F}(x,y,z)=\gen{y^2z^3,2xyz^3,3xy^2z^2}\)
+    \ifprintanswers
+        \begin{solution}
+            \[
+                \mathrm{curl}\bm{F}=\gen{6xyz^2-6xyz^2,3y^2z^2-3y^2z^2,2yz^3-2yz^3}=\bm{0}.
+            \]
+            \begin{align*}
+                \int y^2z^3~dx &= xy^2z^3+C\\
+                \int 2xyz^3~dy &= xy^2z^3+C\\
+                \int 3xy^2z^2~dz &= xy^2z^3+C
+            \end{align*}
+            \[
+                f(x) = xy^2z^3+C
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\bm{F}(x,y,z) = \gen{3xy^2z^2,2x^2yz^3,3x^2y^2z^2}\)
+    \ifprintanswers
+        \begin{solution}
+            Not conservative.
+        \end{solution}
+    \else
+        \vfill
+    \fi
+    \part \(\bm{F}(x,y,z)=\bi+\sin z\bj+y\cos z\bk\)
+    \ifprintanswers
+        \begin{solution}
+            Conservative, \(f(x,y,z)=x+y\sin(z)+C\)
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\end{parts}
+
+\newpage
+
+\question The vector field below is shown in the \(xy\)-plane and looks the same in every parallel plane, i.e. every plane of the form \(z=k\). 
+        \begin{center}
+                \begin{tikzpicture}[scale=.9]
+        \draw[thin,<->] (-.5,0)--(4,0) node[right] {$x$};;
+        \draw[thin,<->] (0,-.5)--(0,3) node[above] {$y$};
+
+        \foreach \x in {.5,1,1.5,2,2.5,3,3.5}
+        {
+                \draw[->,blue] (\x,.25) -- ++(0,.75);
+                \draw[->,blue] (\x,1.25)-- ++(0,.5);
+                \draw[->,blue] (\x,2)-- ++(0,.4);
+                \draw[->,blue] (\x,2.75)-- ++(0,.25);
+        }
+    \end{tikzpicture}
+        \end{center}
+\begin{parts}
+\part Is \(\mathrm{div}\bm{F}\) positive, negative, or zero?
+\ifprintanswers
+        \begin{solution}
+            Let \(\bm{F}=\gen{P,Q,R}\) as usual. Then 
+            \[
+                \mathrm{div}\bm{F}=\pd{P}{x}+\pd{Q}{y}+\pd{R}{z}.
+            \]
+            Based on the image and description, \(\pd{P}{x}=\pd{R}{z}=0\). 
+            As \(y\) increases, the magnitude of the vector field in the \(y\) direction is decreasing. Thus \(\pd{Q}{y}<0\) and 
+            \[
+                \boxed{\mathrm{div}\bm{F}<0}.
+            \]
+        \end{solution}
+    \else
+        \vfill
+    \fi
+\part Explain why \(\mathrm{curl}\bm{F}=0\).
+\ifprintanswers
+        \begin{solution}
+            \[
+                \mathrm{curl}\bm{F}=\nabla\times \bm{F}=\left|
+    \begin{NiceMatrix}
+    \bi & \bj & \bk \\
+    \pd{}{x} & \pd{}{y} & \pd{}{z}\\
+    P & Q & R
+    \end{NiceMatrix}\right|=\gen{\pd{R}{y}-\pd{Q}{z},\pd{P}{z}-\pd{R}{x},\pd{Q}{x}-\pd{P}{y}}
+            \]
+            Each partial derivative in the above is zero
+        \end{solution}
+    \else
+        \vfill
+    \fi 
+    \end{parts}
 
 \end{questions}
 
