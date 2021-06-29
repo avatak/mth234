@@ -1,14 +1,14 @@
 \documentclass[12pt]{exam}
 
 \newcommand{\course}{MTH 234 Summer 2021}
-\newcommand{\qdate}{15.8 Triple Integrals in Cylindrical Coordinates} %PUT DATE HERE
+45\newcommand{\qdate}{15.8 Triple Integrals in Cylindrical Coordinates} %PUT DATE HERE
 \newcommand{\quiz}{Group Work} 
 
 \input{../../common/preamble.tex}
 \newcommand{\bif}{\quad\iff\quad}
 
-%\printanswers
-\noprintanswers
+\printanswers
+%\noprintanswers
 
 \begin{document}
 
@@ -58,6 +58,7 @@
     \part \(0\le r\le 2\), \(-\pi/2\le \theta\le \pi/2\), \(0\le z \le 1\).
         \ifprintanswers
         \begin{solution}
+            The right half of a circle of radius \(2\) that is \(1\) unit thick.
         \end{solution}
     \else
         \vfill
@@ -100,11 +101,13 @@
     \part \(z=x^2-y^2\)
         \ifprintanswers
         \begin{solution}
+        
         \begin{align*}
-            z&=(r\cos\theta)^2-\(r\sin\theta\)^2\\
-                &= r^2\cos^{2}\theta-r^2\sin^2\theta
+            z &= (r\cos\theta)^2-(r\sin\theta)^2\\
+              &= r^2\cos^{2}\theta-r^2\sin^2\theta\\
         \end{align*}
-            \(z=r^2\left(\cos ^2\theta-\sin^2\theta \right)\)
+            
+            \[\boxed{z=r^2\left(\cos ^2\theta-\sin^2\theta \right)}\]
         \end{solution}
     \else
         \vfill
@@ -173,6 +176,13 @@ What is the volume of this surface?
 % soln : Question environment
     \ifprintanswers
         \begin{solution}
+            Based on the bounds, \(z\) is out
+
+            \begin{align*}
+            \int_{-2}^{2}\int_{-\sqrt{4-y^2}}^{\sqrt{4-y^2}}\int_{\sqrt{x^2+y^2}}^2~xz~dz~dx~dy
+                & =           
+            \end{align*}
+
         \end{solution}
     \else
         \vfill

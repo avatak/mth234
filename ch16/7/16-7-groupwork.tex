@@ -15,7 +15,7 @@
 
 
 \begin{enumerate}
-    \item \textbf{Parametric Surfaces:}
+    \item \textbf{\underline{Parametric Surfaces}:}
 
         For a surface \(S\) given by
         \(
@@ -23,33 +23,42 @@
         \)
         The integral of \(f(x,y,z)\) over \(S\) is given by
         \[
-            \boxed{\iint_S~f(x,y,z)~dS = \iint_{D}~f(\br{r}(u,v))~|\bm{r}_u\times \bm{r}_v|~dA}
+            \boxed{\iint_S~f(x,y,z)~dS = \iint_{D}~f(\bm{r}(u,v))~|\bm{r}_u\times \bm{r}_v|~dA}
         \]
-    \item \(\bm{z=g(x,y)}\)
+    \item \textbf{\underline{Graphs}:}
 
         For \(S\) given by \(z=g(x,y)\) with \((x,y)\in D\), 
         \[
             \boxed{\iint_S~f(x,y,z)~dS = \iint_D~f(x,y,g(x,y))~\sqrt{ \left(\pd{z}{x}\right)^2+\left(\pd{z}{y}\right)^2+1}~dA}
         \]
-    \item \textbf{Vector Fields}
+    \item \textbf{\underline{Vector Fields}:}
 
         If \(\bm{F}\) is a continuous vector field on an oriented surface \(S\) with unit normal vector \(\bm{n}\) then 
         \begin{align*}
-        \iint_S\bm{F}\cdot~d\bm{S} & = \iint_S~\bm{F}\cdot \bm{n}~dS\\
-            & = \iint_{D}~\bm{F}\cdot\left(\bm{r}_u\times\bm{r}_v\right)~dA \quad \text{(If $S$ is given by \(r(u,v)\))}
+            \iint_S\bm{F}\cdot~d\bm{S} & = \iint_D~\bm{F}\cdot \bm{n}~dA\\
+            & = \iint_{D}~\bm{F}\cdot\left(\bm{r}_u\times\bm{r}_v\right)~dA\quad\quad \text{(if \(S\) given by \(\bm{r}(u,v)\))}\\
+            & = \iint_D\left(-P\pd{g}{x}-Q\pd{g}{y}+R\right)~dA\quad \text{(if \(S\) is a graph \(z=g(x,y)\))}
         \end{align*}
-            
+        In the last equality above the formula assumes the surface is oriented in the positive direction.
+    \item \textbf{\underline{Here are the answers you should get}:}
+        \begin{enumerate}
+            \item \((364/3)\sqrt{2}\pi\)
+            \item \((2/3)\left(2^{3/2}-1\right)\)
+            \item \(\approx 5.84728\)
+            \item \(4\)
+            \item \(-(4/3)\pi\)
+        \end{enumerate}
     
 \end{enumerate}
 
-~
+\newpage 
 
 \begin{questions}
 
 % 16.7 #11
 \question Evaluate \(\iint_S~x^2z^2~dS\) where \(S\) is the part of the cone 
-\(z^2=x^2+y^2\) that lies between the planes \(z=1\) and \(z=3\).
-\ifprintanswers
+    \(z^2=x^2+y^2\) that lies between the planes \(z=1\) and \(z=3\).
+    \ifprintanswers
         \begin{solution}
             Since \(z\) is always positive between \(1\) and \(3\), we may rewrite the surface as 
             \[
@@ -82,33 +91,36 @@
             \sqrt{2}\iint_{D}x^4+x^2y^2~dA & = \sqrt{2}\int_0^{2\pi}\int_1^3~\left(r^4\cos^4\theta+r^4\cos^2\theta\sin^2\theta\right)r~dr~d\theta\\
             &= \sqrt{2}\int_0^{2\pi}\int_1^3 r^5\cos^2\theta\left(\cos^2\theta+\sin^2\theta\right)~dr~d\theta\\
             & = \sqrt{2}\int_{0}^{2\pi}\cos^2\theta \int_1^3 r^5~dr~d\theta\\
-                & = \left(\frac{364}{3}\right)\sqrt{2}\pi
+                & = \boxed{\left(\frac{364}{3}\right)\sqrt{2}\pi}
             \end{align*}
         \end{solution}
     \else
         \vfill
-    \fi
+\fi
 
 \newpage 
 
-% 16.7 #9
-\question Evaluate \(\iint_S~yz~dS\) where \(S\) is the surface with parametric equations
+% 16.7 #7
+\question Evaluate \(\iint_S~y~dS\) where \(S\) is the helicoid with vector equation
 \[
-    x=u^2,~~y=u\sin v,~~z=u\cos v
-\]
-\[
-    0\le u \le 1,~~0\le v\le \pi/2
+    \bm{r}(u,v) = \gen{u\cos v,u\sin v, v},~0\le u \le 1,~ 0\le v \le \pi.
 \]
 \ifprintanswers
         \begin{solution}
-            \(S\) is given by 
-            \[
-                \bm{r}(u,v)=\gen{u^2,u\sin v,u\cos v}.
-            \]
-            Then 
+            Note that
             \begin{align*}
-                \bm{r}_u\times \bm{r}_v & = \gen{2u,\sin v,\cos v}\times \gen{0,u\cos v,-u\sin v}\\
-                    & 
+                \bm{r}_u\times\bm{r}_v & = \gen{\cos v,\sin v,0}\times \gen{-u\sin v,u\cos v, 1}\\
+                & = \gen{\sin v,-\cos v,u}\\
+                |\bm{r}_u\times\bm{r}_v| & = \sqrt{\sin^2 v+\cos^2 v+u^2}\\
+                    & = \sqrt{1+u^2}
+            \end{align*}
+            So the integral becomes 
+            \begin{align*}
+                \iint_D~(u\sin v)\sqrt{1+u^2}~dA & = \int_0^1\int_0^{\pi}~u\sqrt{1+u^2}\sin v~dv~du\\
+                & = \int_0^1~u\sqrt{1+u^2}\left(\int_0^{\pi}\sin{v}~dv  \right)~du\\
+                & = 2\int_0^1~u\sqrt{1+u^2}~du\\
+                & = \frac{2}{3}\left(1+u^2\right)^{3/2}\biggr|_0^1\\
+                & = \boxed{\frac{2}{3}\left( 2^{3/2}-1 \right)}.
             \end{align*}
         \end{solution}
     \else
@@ -124,7 +136,7 @@
                 \begin{align*}
                     \iint_S~\rho\left(g(y,z),y,z\right)~\sqrt{\left(\pd{y}{x}\right)^2+\left(\pd{z}{x}\right)^2+1}~dS & = \int_0^1\int_0^1~2z\sqrt{17+36z^2}~dz~dy\\
                         & = \left(\frac{2}{3}\right) \left(\frac{1}{36}\right) \left((17+36)^{3/2} - 17^{3/2} \right)\\
-                        & \approx 5.84728
+                        & \approx \boxed{5.84728}
                 \end{align*}
         \end{solution}
     \else
@@ -133,26 +145,75 @@
 
     \newpage
 
-\question Evaluate \(\iint_S\left(-xy\bi-yz\bj+zx\bk\right)\cdot~d\bm{S}\) where 
-\(S\) is the part of the parabaloid \(z=1-x^2-y^2\) that lies above the square \(0\le x \le 2\), \(0\le y \le 4\), and has upward orientation.
-\ifprintanswers
+\question Evaluate \(\iint_S~\bm{F}\cdot d\bm{S}\) as given
+\begin{parts}
+
+\part \(\mathbf{F}(x,y,z)=ze^{xy}\bi-3ze^{xy}\bj+xy\bk\)\\
+    \(S\) is the parallelogram with parametric equations
+    \[
+        x=u+v,~~y=u-v~~,z=1+2u+v
+    \]
+    with 
+    \[
+        0\le u \le 2,~0\le v \le 1
+    \]
+    oriented upwards.
+
+    \ifprintanswers
         \begin{solution}
+        A normal vector is
+            \begin{align*}
+                \bm{r}_u\times\bm{r}_v & = \gen{1,1,2}\times\gen{1,-1,1}\\
+                    & = \gen{3,1,-2}\\
+            \end{align*}
+            This is pointing downwards, so we use \(\bm{n}=\gen{-3,-1,2}=\bm{r}_v\times\bm{r}_u\).
+            \begin{align*}
+                \mathbf{F}(r(u,v))\cdot \left(\bm{r}_v\times\bm{r}_u\right) & = 
+                    \gen{(1+2u+v)e^{u^2-v^2},-3(1+2u+v)e^{u^2-v^2},u^2-v^2}\cdot\gen{-3,-1,2}\\
+                    & = 2(u^2-v^2)
+            \end{align*}
+            and 
+            \begin{align*}
+                \int_0^2\int_0^1~\mathbf{F}(r(u,v))\cdot \left(\bm{r}_v\times\bm{r}_u\right)~dv~du & = \int_0^2\int_0^1~2(u^2-v^2)~dv~du \\
+                    & = \boxed{4}.
+            \end{align*}
         \end{solution}
     \else
         \vfill
     \fi
 
-\question Evaluate \(\iint_S~\bm{F}\cdot ~d\bm{S}\) where
-\[
-    \bm{F}(x,y,z) = xze^y\bi + xze^y \bj +z \bk,
-\]
-and \(S\) is the part of the plane \(x+y+z=1\) in the first octant and has downward orientation.
-\ifprintanswers
+\part \(\mathbf{F}(x,y,z)=\gen{x,-z,y}\)\\
+    \(S\) is the part of sphere \(x^2+y^2+z^2=4\) in the first octant, with orientation towards the origin.
+    \ifprintanswers
         \begin{solution}
+            In the first octant we can describe this surface as 
+            \[
+                z=g(x,y)=\sqrt{4-x^2-y^2}
+            \]
+            with
+            \[
+                \pd{g}{x}=-\frac{x}{\sqrt{4-x^2-y^2}}\quad\text{and}\quad \pd{g}{y}=-\frac{y}{\sqrt{4-x^2-y^2}}
+            \]
+            Then
+            \begin{align*}
+                \iint_S\mathbf{F}\cdot d\mathbf{S} & = \iint_D \left(-P\pd{g}{x}-Q\pd{g}{y}+R\right)~dA\\
+                & = \iint_D -\frac{x^2}{\sqrt{4-x^2-y^2}}-(-\sqrt{4-x^2-y^2})\left(-\frac{y}{\sqrt{4-x^2-y^2}}\right)+y~dA\\
+                & = \iint_D-\frac{x^2}{\sqrt{4-x^2-y^2}}~dA\\
+                & = \int_0^{\pi/2}\int_0^2 - \frac{r^2\cos^2\theta}{\sqrt{4-r^2}}r~dr~d\theta\\
+                & = \left(\int_0^{\pi/2}\cos^2\theta~d\theta\right)\left(\int_0^2 \frac{r^3}{\sqrt{4-r^2}}~dr\right)\\
+                & = \left(\frac{\pi}{4}\right)\left(\frac{16}{3}\right)\\
+                & = \frac{4}{3}\pi.
+            \end{align*}
+            Since we were meant to integrate assuming a downward orientation, the answer is 
+            \[
+                \boxed{-\frac{4}{3} \pi}
+            \]
+            
         \end{solution}
     \else
         \vfill
-    \fi 
+    \fi
+\end{parts}
 
 
 

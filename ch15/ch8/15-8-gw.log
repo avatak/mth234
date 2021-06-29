@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  23 JUN 2021 03:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.17)  28 JUN 2021 10:24
 entering extended mode
 **./15-8-gw.tex
 (15-8-gw.tex
@@ -1208,14 +1208,15 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1{C:/Users/shult/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ] [2] [3]
+[4]
 This exam contains 5 questions with 11 parts, 0 subparts, and 0 subsubparts.
 (15-8-gw.aux) ) 
 Here is how much of TeX's memory you used:
- 32631 strings out of 479173
- 799776 string characters out of 2854167
- 1266808 words of memory out of 3000000
- 49672 multiletter control sequences out of 15000+600000
- 412340 words of font info for 72 fonts, out of 8000000 for 9000
+ 32636 strings out of 479173
+ 799818 string characters out of 2854167
+ 1275809 words of memory out of 3000000
+ 49673 multiletter control sequences out of 15000+600000
+ 412448 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,10n,107p,783b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public
@@ -1229,9 +1230,9 @@ t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
 rs/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/shult/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb>
-Output written on 15-8-gw.pdf (3 pages, 93527 bytes).
+Output written on 15-8-gw.pdf (4 pages, 99609 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16397 words of extra memory for PDF output out of 17280 (max. 10000000)
 
